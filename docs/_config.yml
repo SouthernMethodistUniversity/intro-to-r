@@ -3,7 +3,7 @@
 title                       : Introduction to R Workshop  # The title of the book. Will be placed in the left navbar.
 author                      : Mateo Langston Smith, Tue Vu
 copyright                   : Creative Commons Attribution-ShareAlike 4.0 International License.  # Copyright year to be placed in the footer
-logo                        : logo.svg  # A path to the book logo
+logo                        : logo_stack.svg  # A path to the book logo
 
 
 parse:
