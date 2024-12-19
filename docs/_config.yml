@@ -38,7 +38,7 @@ html:
   comments:
     hypothesis              : false
     utterances              : false
-  announcement              : "Introduction to R Workshop" # A banner announcement at the top of the site.
+#  announcement              : "Introduction to R Workshop" # A banner announcement at the top of the site.
 
 
 #######################################################################################
