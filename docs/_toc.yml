@@ -4,7 +4,10 @@
 format: jb-book
 root: index
 chapters:
-  - file: pedagogy
-  - file: style_guide
-  - file: checklist
-  - file: team
+  - file: basics
+  - file: data_types
+  - file: data_structures
+  - file: ifelse
+  - file: loops
+  - file: functions
+  - file: hands_on
