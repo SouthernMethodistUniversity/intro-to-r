@@ -173,9 +173,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="basics.html">The Basics</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ifelse.html">If-Else Statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loops.html">Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands-On Exercises</a></li>
 </ul>
 
@@ -349,7 +349,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -365,6 +367,25 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-classes">Object Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbers">Numbers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeric"><code class="docutils literal notranslate"><span class="pre">numeric</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integer"><code class="docutils literal notranslate"><span class="pre">integer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex"><code class="docutils literal notranslate"><span class="pre">complex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-numbers">Random Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logical"><code class="docutils literal notranslate"><span class="pre">logical</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character"><code class="docutils literal notranslate"><span class="pre">character</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coercion">Coercion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing Values</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -376,6 +397,36 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="data-types">
 <h1>Data Types<a class="headerlink" href="#data-types" title="Permalink to this heading">#</a></h1>
+<section id="object-classes">
+<h2>Object Classes<a class="headerlink" href="#object-classes" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="numbers">
+<h2>Numbers<a class="headerlink" href="#numbers" title="Permalink to this heading">#</a></h2>
+<section id="numeric">
+<h3><code class="docutils literal notranslate"><span class="pre">numeric</span></code><a class="headerlink" href="#numeric" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="integer">
+<h3><code class="docutils literal notranslate"><span class="pre">integer</span></code><a class="headerlink" href="#integer" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="complex">
+<h3><code class="docutils literal notranslate"><span class="pre">complex</span></code><a class="headerlink" href="#complex" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="random-numbers">
+<h3>Random Numbers<a class="headerlink" href="#random-numbers" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="logical">
+<h2><code class="docutils literal notranslate"><span class="pre">logical</span></code><a class="headerlink" href="#logical" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="character">
+<h2><code class="docutils literal notranslate"><span class="pre">character</span></code><a class="headerlink" href="#character" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="coercion">
+<h2>Coercion<a class="headerlink" href="#coercion" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="missing-values">
+<h2>Missing Values<a class="headerlink" href="#missing-values" title="Permalink to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -432,6 +483,31 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-classes">Object Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbers">Numbers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeric"><code class="docutils literal notranslate"><span class="pre">numeric</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integer"><code class="docutils literal notranslate"><span class="pre">integer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex"><code class="docutils literal notranslate"><span class="pre">complex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-numbers">Random Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logical"><code class="docutils literal notranslate"><span class="pre">logical</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character"><code class="docutils literal notranslate"><span class="pre">character</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coercion">Coercion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing Values</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
