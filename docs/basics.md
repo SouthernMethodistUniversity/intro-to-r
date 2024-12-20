@@ -37,6 +37,16 @@ In the bottom left panel of RStudio, under the **Console** tab, is where you wil
 > 1 + 1
 ```
 
+```{code-block} python
+:caption: This is a caption
+:emphasize-lines: 2,3
+:lineno-start: 1
+
+a = 1
+b = 2
+c = 3
+```
+
 ```{code-block} r
 :caption: Output
 
