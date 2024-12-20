@@ -56,4 +56,6 @@ repository:
 
 sphinx:
   config:
-    numfig: false
+    numfig: true
+    numfig_format:
+      code-block: ""
