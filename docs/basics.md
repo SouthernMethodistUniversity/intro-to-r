@@ -18,13 +18,27 @@ In order to use RStudio on M3, you will need to be on a ColdFront allocation, wh
 
 ## Using RStudio
 
+RStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.
+
 ### File Explorer
+
+In the bottom right panel of RStudio, under the **Files** tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your *working directory*. Your *working directory* is the base folder you want to operate in within an R session. Any filepaths or items saved in your *environment* will use your *working directory* as its base.
+
+To set your *working directory*, navigate to the folder you want to be your *working directory*, click one **More**, and then **Set As Working Directory**. You can always change this, and we will discuss the best way to make use of a *working directory* in the Projects section below.
 
 ### Console
 
-### Scripts
+In the bottom left panel of RStudio, under the **Console** tab, is where you will execute all of your R code. Each line of code is prompted by the `>` symbol. To execute your code you will type out your code and hit the **Enter** key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.
 
-### Working Directory
+```R Console (Input)
+> 1 + 1
+```
+
+```R Console (Output)
+[1] 2
+```
+
+### Scripts
 
 ### Environment
 
