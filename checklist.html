@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Checklist &#8212; Introduction to R Workshop</title>
   
@@ -15,59 +14,59 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'checklist';</script>
     <link rel="canonical" href="https://southernmethodistuniversity.github.io/intro-to-r/checklist.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -75,32 +74,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -108,7 +91,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -116,16 +98,27 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -140,6 +133,8 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="index.html">
   
@@ -153,11 +148,18 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     <img src="_static/logo_stack.svg" class="logo__image only-light" alt="Introduction to R Workshop - Home"/>
-    <script>document.write(`<img src="_static/logo_stack.svg" class="logo__image only-dark" alt="Introduction to R Workshop - Home"/>`);</script>
+    <img src="_static/logo_stack.svg" class="logo__image only-dark pst-js-only" alt="Introduction to R Workshop - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -183,14 +185,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -199,14 +206,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -329,27 +336,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -420,10 +419,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="checklist">
-<h1>Checklist<a class="headerlink" href="#checklist" title="Permalink to this heading">#</a></h1>
+<h1>Checklist<a class="headerlink" href="#checklist" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>For Instructor / Facilitator</p></li>
 <li><p>For Reviewing content</p>
@@ -436,16 +435,16 @@ document.write(`
 </ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="module-checklist-for-instructor">
-<h1>Module Checklist (FOR INSTRUCTOR)<a class="headerlink" href="#module-checklist-for-instructor" title="Permalink to this heading">#</a></h1>
+<h1>Module Checklist (FOR INSTRUCTOR)<a class="headerlink" href="#module-checklist-for-instructor" title="Link to this heading">#</a></h1>
 <section id="readme">
-<h2>ReadMe<a class="headerlink" href="#readme" title="Permalink to this heading">#</a></h2>
+<h2>ReadMe<a class="headerlink" href="#readme" title="Link to this heading">#</a></h2>
 <p>The Readme for each workshop should contain the following:</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="an-h1-level-heading-with-the-name-of-the-tutorial">
-<h1>An H1 level heading with the name of the tutorial<a class="headerlink" href="#an-h1-level-heading-with-the-name-of-the-tutorial" title="Permalink to this heading">#</a></h1>
+<h1>An H1 level heading with the name of the tutorial<a class="headerlink" href="#an-h1-level-heading-with-the-name-of-the-tutorial" title="Link to this heading">#</a></h1>
 <section id="contact-information">
-<h2>Contact information<a class="headerlink" href="#contact-information" title="Permalink to this heading">#</a></h2>
+<h2>Contact information<a class="headerlink" href="#contact-information" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Who is teaching this workshop?</p></li>
 <li><p>What SMU unit are they in?</p></li>
@@ -453,14 +452,14 @@ document.write(`
 </ul>
 </section>
 <section id="learning-prerequisites">
-<h2>Learning Prerequisites<a class="headerlink" href="#learning-prerequisites" title="Permalink to this heading">#</a></h2>
+<h2>Learning Prerequisites<a class="headerlink" href="#learning-prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>What prerequisites are required to get the most of out of this workshop?</p></li>
 <li><p>What are participants already expected to know?</p></li>
 </ul>
 </section>
 <section id="technology-prerequisites">
-<h2>Technology Prerequisites<a class="headerlink" href="#technology-prerequisites" title="Permalink to this heading">#</a></h2>
+<h2>Technology Prerequisites<a class="headerlink" href="#technology-prerequisites" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>What are the technology requirements for the workshop?</p></li>
 <li><p>Is it online?</p></li>
@@ -469,20 +468,20 @@ document.write(`
 </ul>
 </section>
 <section id="learning-objectives">
-<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>What will they learn in this workshop?</p></li>
 </ul>
 </section>
 <section id="description">
-<h2>Description:<a class="headerlink" href="#description" title="Permalink to this heading">#</a></h2>
+<h2>Description:<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>A short paragraph with an accessible description of the technique.</p></li>
 <li><p>Table of contents with links to the topics in the tutorial.</p></li>
 </ul>
 </section>
 <section id="modules">
-<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this heading">#</a></h2>
+<h2>Modules<a class="headerlink" href="#modules" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Introduction: Describes the technique or technology in more detail, ideally also explaining the purpose or value of the approach</p></li>
 <li><p>Pages: Each major concept or milestone in the tutorial should have a new page.</p></li>
@@ -490,19 +489,19 @@ document.write(`
 </ul>
 </section>
 <section id="resources-or-continue-page">
-<h2>Resources (or continue page?)<a class="headerlink" href="#resources-or-continue-page" title="Permalink to this heading">#</a></h2>
+<h2>Resources (or continue page?)<a class="headerlink" href="#resources-or-continue-page" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>If applicable, a <code class="docutils literal notranslate"><span class="pre">resources</span></code> section with links to sources, books, tools, or other tutorials at the end of tutorial.</p></li>
 </ul>
 </section>
 <section id="attribution">
-<h2>Attribution<a class="headerlink" href="#attribution" title="Permalink to this heading">#</a></h2>
+<h2>Attribution<a class="headerlink" href="#attribution" title="Link to this heading">#</a></h2>
 <section id="free-and-open-source-code">
-<h3>Free and Open Source Code<a class="headerlink" href="#free-and-open-source-code" title="Permalink to this heading">#</a></h3>
+<h3>Free and Open Source Code<a class="headerlink" href="#free-and-open-source-code" title="Link to this heading">#</a></h3>
 <p>In general, it’s not necessary to provide in-line citations in the materials for a technical workshop unless you’re using someone else’s exact prose or you’re replicating a significant, non-trivial section of code. For example, code segments found on Stack Overflow do not need to be cited unless you think it’s pedagogically helpful. However, if you build your session around replicating a significant portion of a particular application, you must consider the license under which that software is released and consider providing attribution, even if attribution is not required under the terms of the license. In general, free and open source code licenses do not require attribution, but using a large portion of the code may require replicating the license. Check a summary of the terms of the license (or the license itself, if you’re feeling adventurous) if you decide to replicate a significant portion of an open-source project in your session.</p>
 </section>
 <section id="citation-practices-for-workshops">
-<h3>Citation practices for workshops<a class="headerlink" href="#citation-practices-for-workshops" title="Permalink to this heading">#</a></h3>
+<h3>Citation practices for workshops<a class="headerlink" href="#citation-practices-for-workshops" title="Link to this heading">#</a></h3>
 <p>Many of the workshops in this curriculum were created by multiple creators. This makes the process of attributing of each other a bit messy. An interested person can see the precise details what was done and by whom in what order in the GitHub commit log. However, we also realize that folks reading this curriculum may not be Git-literate (yet!) or may access this curriculum as a .PDF or a hard copy document offline. Thus, it is also important to attribute the labor of individual contributors in written form at the beginning of each workshop and every other section of this curriculum.</p>
 <p>Currently, the workshops include two forms of attribution: “Session leader: …” and “Based on previous work by …”—the former indicates the person who will be the lead teacher of the workshop during the Summer 2020 DHRI session, and the latter indicates who worked on the content of the workshop. We recognize that both are significant attributions, but that the latter is especially important in terms of citation politics, particularly for students and junior scholars. So, despite its redundancy, we listed a contributors name twice if they both are leading the workshop in June 2018 and if they created or significantly contributed to or revised the workshop’s content. It is also of note that various contributors edited the content of each others’ workshops.</p>
 <p>In regards to citing other academics, this curriculum aims to follow commonly held academic citation practices, in which direct quotations are formatted and cited as such, and when another scholar’s ideas or concepts are referenced, a citation is also included. In general, the following citation information is provided: the author name(s), publication title, and publication date, and a hyperlink to the source, if applicable and within copyright.</p>
@@ -510,20 +509,20 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="planning">
-<h1>Planning<a class="headerlink" href="#planning" title="Permalink to this heading">#</a></h1>
+<h1>Planning<a class="headerlink" href="#planning" title="Link to this heading">#</a></h1>
 <section id="helpers">
-<h2>Helpers<a class="headerlink" href="#helpers" title="Permalink to this heading">#</a></h2>
+<h2>Helpers<a class="headerlink" href="#helpers" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>How many instructors are needed? For the hands on components, are additional instructors or helpers required?</p></li>
 </ul>
 </section>
 <section id="calendar">
-<h2>Calendar<a class="headerlink" href="#calendar" title="Permalink to this heading">#</a></h2>
+<h2>Calendar<a class="headerlink" href="#calendar" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>When will the event be?</p></li>
 <li><p>What needs to be done to book the space?</p>
 <ul>
-<li><p>Make sure event is posted to <a class="reference external" href="https://libcal.smu.edu/calendar/fondren/?cid=-1&amp;t=d&amp;d=0000-00-00&amp;cal=-1&amp;inc=0">LibCal Events Calendar</a>
+<li><p>Make sure event is posted to <a class="reference external" href="https://libcal.smu.edu/calendar/fondren/?cid=-1&amp;amp;t=d&amp;amp;d=0000-00-00&amp;amp;cal=-1&amp;amp;inc=0">LibCal Events Calendar</a>
 <strong>DESCRIBE or LINK TO PROCESS</strong></p></li>
 <li><p>list of tags etc.</p></li>
 </ul>
@@ -532,14 +531,14 @@ document.write(`
 </ul>
 </section>
 <section id="marketing">
-<h2>Marketing<a class="headerlink" href="#marketing" title="Permalink to this heading">#</a></h2>
+<h2>Marketing<a class="headerlink" href="#marketing" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Submit ticket to Marketing department to promote event.  <strong>DESCRIBE or LINK TO PROCESS</strong></p></li>
 <li><p>Inform Director of Fondren or anyone else that needs to know about the event.</p></li>
 </ul>
 </section>
 <section id="assessment">
-<h2>Assessment<a class="headerlink" href="#assessment" title="Permalink to this heading">#</a></h2>
+<h2>Assessment<a class="headerlink" href="#assessment" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Create post-survey(s) to be sent to participants.  <strong>DESCRIBE or LINK TO PROCESS</strong></p></li>
 <li><p>Send after workshop or after each day of multi-day workshop.</p></li>
@@ -549,14 +548,14 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="review">
-<h1>Review<a class="headerlink" href="#review" title="Permalink to this heading">#</a></h1>
+<h1>Review<a class="headerlink" href="#review" title="Link to this heading">#</a></h1>
 <p>As our goal is that our lessons build on each on each other. We will review lessons for content and where they fit in to other workshops.</p>
 <section id="process-of-review">
-<h2>Process of Review<a class="headerlink" href="#process-of-review" title="Permalink to this heading">#</a></h2>
+<h2>Process of Review<a class="headerlink" href="#process-of-review" title="Link to this heading">#</a></h2>
 <p>Creation of these workshops is collaborative and review is an iterative process.
 We will review for: <em>Pedagogy, Content and grammar.</em></p>
 <section id="grammar">
-<h3>Grammar<a class="headerlink" href="#grammar" title="Permalink to this heading">#</a></h3>
+<h3>Grammar<a class="headerlink" href="#grammar" title="Link to this heading">#</a></h3>
 <p>Check all spelling and punctuation throughout.
 All bulleted lists should end in some type of end mark (period, question mark, etc.).
 Read through all content to make sure sections or content is not duplicated or repetitive, or that there are not disruptive jumps from one topic to another without explanation.</p>
@@ -564,9 +563,9 @@ Read through all content to make sure sections or content is not duplicated or r
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="checklist-for-review-reviewers-will-assess">
-<h1>Checklist for review: Reviewers will assess<a class="headerlink" href="#checklist-for-review-reviewers-will-assess" title="Permalink to this heading">#</a></h1>
+<h1>Checklist for review: Reviewers will assess<a class="headerlink" href="#checklist-for-review-reviewers-will-assess" title="Link to this heading">#</a></h1>
 <section id="content-are-the-following-sections-defined">
-<h2>Content: Are the following sections defined?<a class="headerlink" href="#content-are-the-following-sections-defined" title="Permalink to this heading">#</a></h2>
+<h2>Content: Are the following sections defined?<a class="headerlink" href="#content-are-the-following-sections-defined" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>ReadMe</p>
 <ul>
@@ -600,7 +599,7 @@ Read through all content to make sure sections or content is not duplicated or r
 </ul>
 </section>
 <section id="pedagogy-does-each-module-fulfill">
-<h2>Pedagogy: Does each module fulfill<a class="headerlink" href="#pedagogy-does-each-module-fulfill" title="Permalink to this heading">#</a></h2>
+<h2>Pedagogy: Does each module fulfill<a class="headerlink" href="#pedagogy-does-each-module-fulfill" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Scope</p></li>
 <li><p>Scaffolding</p></li>
@@ -615,7 +614,7 @@ Read through all content to make sure sections or content is not duplicated or r
 </ul>
 </section>
 <section id="id1">
-<h2>Grammar<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h2>Grammar<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Check all spelling and punctuation throughout.</p></li>
 <li><p>All bulleted lists should end in some type of end mark (period, question mark, etc.).</p></li>
@@ -694,7 +693,7 @@ Read through all content to make sure sections or content is not duplicated or r
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
 </div>
@@ -704,7 +703,9 @@ Read through all content to make sure sections or content is not duplicated or r
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -801,8 +802,8 @@ By Mateo Langston Smith and Tue Vu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
