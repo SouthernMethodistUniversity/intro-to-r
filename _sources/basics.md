@@ -31,7 +31,7 @@ To set your *working directory*, navigate to the folder you want to be your *wor
 In the bottom left panel of RStudio, under the **Console** tab, is where you will execute all of your R code. Each line of code is prompted by the `>` symbol. You do not need to type in the `>`, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the **Enter** key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.
 
 ```{code-block} r
-:caption: R Console
+:caption: R Console Input
 
 > 1 + 1
 ```
