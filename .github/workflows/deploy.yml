@@ -1,40 +1,43 @@
 name: deploy-book
 
-# Only run this when the master branch changes
-
+# Only run this workflow when the main branch changes
 on:
   push:
     branches:
       - main
     paths:
       - 'docs/**'
-    
-# This job installs dependencies, builds the book, and pushes it to `gh-pages`
+
+# Deploy the JupyterBook to GitHub Pages
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      # Check out the repository
+      - uses: actions/checkout@v3
 
-    # Install dependencies
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
+      # Set up the latest stable Python version
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
 
-    - name: Install dependencies
-      run: |
-        pip install -U jupyter-book
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter-book==0.15.2
+          pip install myst-parser==0.19.0 sphinx==7.2.6
 
-    # Build the book
-    - name: Build the book
-      run: |
-        jupyter-book build docs
+      # Build the book
+      - name: Build the book
+        run: |
+          jupyter-book build docs
 
-    # Push the book's HTML to github-pages
-    - name: GitHub Pages action
-      uses: peaceiris/actions-gh-pages@v3.6.1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/_build/html
+      # Deploy the built HTML to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3.9.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_build/html
 
