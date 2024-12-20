@@ -32,14 +32,12 @@ In the bottom left panel of RStudio, under the **Console** tab, is where you wil
 
 ```{code-block} R
 :caption: Caption
-:label: Label
 
 > 1 + 1
 ```
 
 ```{code-block} R
 :caption: Caption
-:label: Label
 
 [1] 2
 ```
