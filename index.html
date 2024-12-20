@@ -348,7 +348,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -364,6 +366,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workshop-scope">Workshop Scope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-r">Why use R?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -375,11 +386,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-r-workshop">
 <h1>Introduction to R Workshop<a class="headerlink" href="#introduction-to-r-workshop" title="Permalink to this heading">#</a></h1>
+<section id="workshop-scope">
+<h2>Workshop Scope<a class="headerlink" href="#workshop-scope" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="why-use-r">
+<h2>Why use R?<a class="headerlink" href="#why-use-r" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
-<ul class="simple">
-<li><p>Content developed by Mateo Langston Smith based on a workshop by Tue Vu</p></li>
-</ul>
 <p><a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -430,6 +444,21 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workshop-scope">Workshop Scope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-r">Why use R?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -439,7 +468,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By Mateo Langston Smith, Tue Vu
+By Mateo Langston Smith and Tue Vu
 </p>
 
   </div>
