@@ -32,6 +32,7 @@ In the bottom left panel of RStudio, under the **Console** tab, is where you wil
 
 ```{code-block} r
 :caption: R Console Input
+:name:
 
 > 1 + 1
 ```
