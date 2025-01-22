@@ -1,7 +1,3 @@
-# Welcome {.unnumbered}
+# Introduction {.unnumbered}
 
-Test Welcome
-
-## Acknowledgements {.unnumbered}
-
-Ack
+## Why use R? {.unnumbered}

@@ -4,15 +4,13 @@ project:
 
 book:
   title: "Introduction to R Workshop"
-  reader-mode: true
-
+  reader-mode: false
+  sidebar:
+    logo: logo_stack.svg
+    pinned: true
   page-footer:
-    left: |
-      Left Footer
-    right: |
-      Right Footer
-  cover-image: cover.jpg
-  favicon: cover.jpg
+    left: Content developed by Mateo Langston Smith and Tue Vu
+    right: <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
   site-url: https://southernmethodistuniversity.github.io/intro-to-r/
   repo-url: https://github.com/SouthernMethodistUniversity/intro-to-r
   repo-branch: main
@@ -22,8 +20,8 @@ book:
 
 format:
   html:
+    theme: cosmo
     code-link: true
-
     author-meta: "Mateo Langston Smith and Tue Vu, PhD"
     callout-appearance: simple
 
