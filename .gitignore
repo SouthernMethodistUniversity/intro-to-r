@@ -3,7 +3,7 @@
 .#*
 .DS_Store
 .RHistory
-.RProj
+*.RProj
 .RProj.user
 .RData
 .Rproj.user
