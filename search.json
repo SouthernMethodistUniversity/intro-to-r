@@ -4,19 +4,19 @@
     "href": "index.html",
     "title": "Introduction to R Workshop",
     "section": "",
-    "text": "Welcome\nTest Welcome",
+    "text": "Introduction",
     "crumbs": [
-      "Welcome"
+      "Introduction"
     ]
   },
   {
-    "objectID": "index.html#acknowledgements",
-    "href": "index.html#acknowledgements",
+    "objectID": "index.html#why-use-r",
+    "href": "index.html#why-use-r",
     "title": "Introduction to R Workshop",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nAck",
+    "section": "Why use R?",
+    "text": "Why use R?",
     "crumbs": [
-      "Welcome"
+      "Introduction"
     ]
   }
 ]
