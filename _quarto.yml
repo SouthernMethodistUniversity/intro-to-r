@@ -1,0 +1,30 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Introduction to R Workshop"
+  reader-mode: true
+
+  page-footer:
+    left: |
+      Left Footer
+    right: |
+      Right Footer
+  cover-image: cover.jpg
+  favicon: cover.jpg
+  site-url: https://southernmethodistuniversity.github.io/intro-to-r/
+  repo-url: https://github.com/SouthernMethodistUniversity/intro-to-r
+  repo-branch: main
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+
+format:
+  html:
+    code-link: true
+
+    author-meta: "Mateo Langston Smith and Tue Vu, PhD"
+    callout-appearance: simple
+
+editor: visual
