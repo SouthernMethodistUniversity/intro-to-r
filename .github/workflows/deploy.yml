@@ -38,6 +38,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.9.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish-dir: './_book'
-          production-branch: main
+          publish_dir: './_book'
+          production_branch: main
 
