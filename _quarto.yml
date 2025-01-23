@@ -5,11 +5,12 @@ project:
 book:
   title: "Introduction to R Workshop"
   reader-mode: false
+  cover-image: r_logo.png
   sidebar:
     logo: logo_stack.svg
     pinned: true
   page-footer:
-    left: Content developed by Mateo Langston Smith and Tue Vu
+    left: OIT Research Technology Services
     right: <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
   site-url: https://southernmethodistuniversity.github.io/intro-to-r/
   repo-url: https://github.com/SouthernMethodistUniversity/intro-to-r
