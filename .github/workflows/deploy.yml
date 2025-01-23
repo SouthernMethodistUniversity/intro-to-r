@@ -9,36 +9,19 @@ jobs:
   deploy-book:
     runs-on: ubuntu-latest
     container:
-      image: rocker/verse:latest  # Prebuilt R environment with Quarto
+      image: rocker/verse:latest  # Uses a prebuilt R environment with Quarto
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Cache R Packages (Corrected Path)
-      - name: Cache R Packages
-        uses: actions/cache@v3
-        with:
-          path: /root/R/x86_64-pc-linux-gnu-library/4.3  # Update this based on R version
-          key: ${{ runner.os }}-R-${{ hashFiles('**/DESCRIPTION') }}
-          restore-keys: |
-            ${{ runner.os }}-R-
-
-      # Install Quarto if missing (should already be in rocker/verse)
-      - name: Install Quarto (if needed)
-        run: |
-          if ! command -v quarto &> /dev/null; then
-            wget https://quarto.org/download/latest/quarto-linux-amd64.deb
-            sudo dpkg -i quarto-linux-amd64.deb
-          fi
-
       # Install missing R packages
       - name: Install R Packages
         run: |
-          Rscript -e "needed <- c('rmarkdown', 'tidyverse', 'quarto'); 
-                      installed <- rownames(installed.packages()); 
-                      to_install <- setdiff(needed, installed); 
-                      if (length(to_install) > 0) install.packages(to_install, lib='/root/R/x86_64-pc-linux-gnu-library/4.3')"
+          Rscript -e "needed <- c('rmarkdown', 'tidyverse', 'quarto');
+                      installed <- rownames(installed.packages());
+                      to_install <- setdiff(needed, installed);
+                      if (length(to_install) > 0) install.packages(to_install)"
 
       - name: Render Quarto Project
         run: quarto render
