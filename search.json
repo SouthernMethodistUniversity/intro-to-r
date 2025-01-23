@@ -99,6 +99,17 @@
     ]
   },
   {
+    "objectID": "basics.html#test-leaflet",
+    "href": "basics.html#test-leaflet",
+    "title": "\n2  Basics\n",
+    "section": "\n2.6 Test Leaflet",
+    "text": "2.6 Test Leaflet\n\nlibrary(leaflet)\nleaflet() %&gt;%\n  addTiles()",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Introduction to R Workshop",
