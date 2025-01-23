@@ -16,7 +16,10 @@ book:
   repo-branch: main
   repo-actions: [edit, issue]
   chapters:
-    - index.qmd
+    - part: index.qmd
+      chapters: 
+        - setup.qmd
+        - basics.qmd
 
 format:
   html:
