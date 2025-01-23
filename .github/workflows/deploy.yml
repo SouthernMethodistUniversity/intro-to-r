@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Cache R packages to speed up subsequent runs
+      # Cache R Packages to speed up subsequent runs
       - name: Cache R Packages
         uses: actions/cache@v3
         with:
@@ -24,7 +24,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-R-
 
-      # Install Quarto (if missing, which shouldn't be in rocker/verse)
+      # Install Quarto if missing (should already be in rocker/verse)
       - name: Install Quarto (if needed)
         run: |
           if ! command -v quarto &> /dev/null; then
@@ -35,10 +35,10 @@ jobs:
       # Install missing R packages
       - name: Install R Packages
         run: |
-          Rscript -e 'needed <- c("rmarkdown", "tidyverse", "quarto"); \
-                      installed <- rownames(installed.packages()); \
-                      to_install <- setdiff(needed, installed); \
-                      if (length(to_install) > 0) install.packages(to_install)'
+          Rscript -e "needed <- c('rmarkdown', 'tidyverse', 'quarto');
+                      installed <- rownames(installed.packages());
+                      to_install <- setdiff(needed, installed);
+                      if (length(to_install) > 0) install.packages(to_install)"
 
       - name: Render Quarto Project
         run: quarto render
