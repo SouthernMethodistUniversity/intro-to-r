@@ -35,6 +35,7 @@ book:
       chapters: 
         - exercise1.qmd
         - exercise2.qmd
+    - next_steps.qmd
 
 format:
   html:

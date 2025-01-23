@@ -6,10 +6,11 @@ The content for this workshop is developed and taught by the OIT Research Techno
 
 ## Objectives
 
--   Learn the basics of the R programming language.
--   Learn to leverage the different data types and structures available in R.
--   Learn how to write functions to streamline your code.
--   Gain hands-on experience with what you learned.
+- Learn the basics of the R programming language.
+- Learn how to use the RStudio IDE.
+- Learn to leverage the different data types and structures available in R.
+- Learn how to write functions to streamline your code.
+- Gain hands-on experience with programming in R.
 
 ## License
 

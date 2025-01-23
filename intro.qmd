@@ -1,1 +1,5 @@
 # Introduction {.unnumbered}
+
+## What is R? {.unnumbered}
+
+## Why use R? {.unnumbered}
