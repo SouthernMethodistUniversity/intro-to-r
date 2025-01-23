@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://southernmethodistuniversity.github.io/intro-to-r/index.html</loc>
-    <lastmod>2025-01-22T23:46:45.762Z</lastmod>
+    <lastmod>2025-01-23T17:24:52.513Z</lastmod>
+  </url>
+  <url>
+    <loc>https://southernmethodistuniversity.github.io/intro-to-r/setup.html</loc>
+    <lastmod>2025-01-23T17:24:52.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://southernmethodistuniversity.github.io/intro-to-r/basics.html</loc>
+    <lastmod>2025-01-23T17:24:52.512Z</lastmod>
   </url>
 </urlset>

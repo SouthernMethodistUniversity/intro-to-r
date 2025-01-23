@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mateo Langston Smith and Tue Vu, PhD">
 
-<title>Introduction to R Workshop</title>
+<title>2&nbsp; Basics – Introduction to R Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./setup.html" rel="next">
+<link href="./setup.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -80,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li><li class="breadcrumb-item"><a href="./basics.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -113,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html" class="sidebar-item-text sidebar-link active">
+            <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -128,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link">
+  <a href="./basics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics</span></span></a>
   </div>
 </li>
@@ -144,19 +178,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <li><a href="#using-rstudio" id="toc-using-rstudio" class="nav-link active" data-scroll-target="#using-rstudio"><span class="header-section-number">2.1</span> Using RStudio</a>
   <ul class="collapse">
-  <li><a href="#why-use-r" id="toc-why-use-r" class="nav-link" data-scroll-target="#why-use-r">Why use R?</a></li>
+  <li><a href="#file-explorer" id="toc-file-explorer" class="nav-link" data-scroll-target="#file-explorer"><span class="header-section-number">2.1.1</span> File Explorer</a></li>
+  <li><a href="#console" id="toc-console" class="nav-link" data-scroll-target="#console"><span class="header-section-number">2.1.2</span> Console</a></li>
+  <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts"><span class="header-section-number">2.1.3</span> Scripts</a></li>
+  <li><a href="#environment" id="toc-environment" class="nav-link" data-scroll-target="#environment"><span class="header-section-number">2.1.4</span> Environment</a></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects"><span class="header-section-number">2.1.5</span> Projects</a></li>
   </ul></li>
+  <li><a href="#using-r-as-a-calculator" id="toc-using-r-as-a-calculator" class="nav-link" data-scroll-target="#using-r-as-a-calculator"><span class="header-section-number">2.2</span> Using R as a Calculator</a></li>
+  <li><a href="#boolean-comparisons" id="toc-boolean-comparisons" class="nav-link" data-scroll-target="#boolean-comparisons"><span class="header-section-number">2.3</span> Boolean Comparisons</a></li>
+  <li><a href="#assigning-variables" id="toc-assigning-variables" class="nav-link" data-scroll-target="#assigning-variables"><span class="header-section-number">2.4</span> Assigning Variables</a></li>
+  <li><a href="#get-help" id="toc-get-help" class="nav-link" data-scroll-target="#get-help"><span class="header-section-number">2.5</span> Get Help</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/basics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li><li class="breadcrumb-item"><a href="./basics.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction to R Workshop</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics</span></h1>
 </div>
 
 
@@ -173,13 +215,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level1 unnumbered">
-<h1 class="unnumbered">Introduction</h1>
-<section id="why-use-r" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="why-use-r">Why use R?</h2>
-
-
+<section id="using-rstudio" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="using-rstudio"><span class="header-section-number">2.1</span> Using RStudio</h2>
+<p>RStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.</p>
+<section id="file-explorer" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="file-explorer"><span class="header-section-number">2.1.1</span> File Explorer</h3>
+<p>In the bottom right panel of RStudio, under the <strong>Files</strong> tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your <em>working directory</em>. Your <em>working directory</em> is the base folder you want to operate in within an R session. Any filepaths or items saved in your <em>environment</em> will use your <em>working directory</em> as its base.</p>
+<p>To set your <em>working directory</em>, navigate to the folder you want to be your <em>working directory</em>, click one <strong>More</strong>, and then <strong>Set As Working Directory</strong>. You can always change this, and we will discuss the best way to make use of a <em>working directory</em> in the Projects section below.</p>
 </section>
+<section id="console" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="console"><span class="header-section-number">2.1.2</span> Console</h3>
+<p>In the bottom left panel of RStudio, under the <strong>Console</strong> tab, is where you will execute all of your R code. Each line of code is prompted by the <code>&gt;</code> symbol. You do not need to type in the <code>&gt;</code>, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the <strong>Enter</strong> key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section>
+<section id="scripts" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="scripts"><span class="header-section-number">2.1.3</span> Scripts</h3>
+</section>
+<section id="environment" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="environment"><span class="header-section-number">2.1.4</span> Environment</h3>
+</section>
+<section id="projects" class="level3" data-number="2.1.5">
+<h3 data-number="2.1.5" class="anchored" data-anchor-id="projects"><span class="header-section-number">2.1.5</span> Projects</h3>
+</section>
+</section>
+<section id="using-r-as-a-calculator" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="using-r-as-a-calculator"><span class="header-section-number">2.2</span> Using R as a Calculator</h2>
+</section>
+<section id="boolean-comparisons" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="boolean-comparisons"><span class="header-section-number">2.3</span> Boolean Comparisons</h2>
+</section>
+<section id="assigning-variables" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="assigning-variables"><span class="header-section-number">2.4</span> Assigning Variables</h2>
+</section>
+<section id="get-help" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="get-help"><span class="header-section-number">2.5</span> Get Help</h2>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -602,11 +678,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./setup.html" class="pagination-link" aria-label="Setup">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Setup</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./setup.html" class="pagination-link" aria-label="Setup">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Setup</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -617,7 +693,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/basics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a></p>
 </div>
