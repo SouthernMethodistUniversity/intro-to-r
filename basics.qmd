@@ -31,3 +31,11 @@ In the bottom left panel of RStudio, under the **Console** tab, is where you wil
 ## Assigning Variables
 
 ## Get Help
+
+## Test Leaflet
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles()
+```
