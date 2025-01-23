@@ -1,5 +1,14 @@
 # Setup
 
+## Overview
+
+- **Teaching:** 5 minutes
+- **Exercises:** 2 minutes
+
+## Objectives
+
+- To get your RStudio environment set up
+
 The best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, use Posit Cloud, or access it via M3 (one of SMU's supercomputers).
 
 ## Install on your computer

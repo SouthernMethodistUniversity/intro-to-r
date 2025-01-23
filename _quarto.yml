@@ -16,10 +16,24 @@ book:
   repo-branch: main
   repo-actions: [edit, issue]
   chapters:
-    - part: index.qmd
+    - index.qmd
+    - part: "Introduction"
       chapters: 
         - setup.qmd
         - basics.qmd
+    - part: "Objects"
+      chapters: 
+        - data_types.qmd
+        - data_structures.qmd
+    - part: "Control Structures"
+      chapters: 
+        - functions.qmd
+        - ifelse.qmd
+        - loops.qmd
+    - part: "Hands-On Exercises"
+      chapters: 
+        - exercise1.qmd
+        - exercise2.qmd
 
 format:
   html:
