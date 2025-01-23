@@ -14,7 +14,7 @@
     "href": "index.html#objectives",
     "title": "Introduction to R Workshop",
     "section": "Objectives",
-    "text": "Objectives\n\nLearn the basics of the R programming language.\nLearn to leverage the different data types and structures available in R.\nLearn how to write functions to streamline your code.\nGain hands-on experience with what you learned.",
+    "text": "Objectives\n\nLearn the basics of the R programming language.\nLearn how to use the RStudio IDE.\nLearn to leverage the different data types and structures available in R.\nLearn how to write functions to streamline your code.\nGain hands-on experience with programming in R.",
     "crumbs": [
       "Welcome"
     ]
@@ -56,40 +56,18 @@
     "href": "setup.html#objectives",
     "title": "1  Setup",
     "section": "1.2 Objectives",
-    "text": "1.2 Objectives\n\nTo get your RStudio environment set up\n\nThe best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, use Posit Cloud, or access it via M3 (one of SMU’s supercomputers).",
+    "text": "1.2 Objectives\n\nTo get your RStudio environment set up",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
-    "objectID": "setup.html#install-on-your-computer",
-    "href": "setup.html#install-on-your-computer",
+    "objectID": "setup.html#accessing-rstudio",
+    "href": "setup.html#accessing-rstudio",
     "title": "1  Setup",
-    "section": "1.3 Install on your computer",
-    "text": "1.3 Install on your computer\nTo install R and RStudio on your computer, follow the instructions here. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation. This option is recommended for those who will primarily be using the same computer and do not need the resources of a high-performance computer.",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
-    ]
-  },
-  {
-    "objectID": "setup.html#posit-cloud",
-    "href": "setup.html#posit-cloud",
-    "title": "1  Setup",
-    "section": "1.4 Posit Cloud",
-    "text": "1.4 Posit Cloud\nPosit Cloud works in the browser with a free account. You can make an account and get started here. This option is recommended for those who regularly use different computers and do not need the resources of a high-performance computer.",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
-    ]
-  },
-  {
-    "objectID": "setup.html#m3",
-    "href": "setup.html#m3",
-    "title": "1  Setup",
-    "section": "1.5 M3",
-    "text": "1.5 M3\nIn order to use RStudio on M3, you will need to be on a ColdFront allocation, which can be requested on your behalf by a faculty or staff member. For the purposes of this workshop, your instructor will have a ColdFront allocation made available to you. Once you have an active account, you can follow the instructions here and open an RStudio Server session. This option is recommended for those who need the resources of a high-performance computer for fields such as Machine Learning and Artificial Intelligence.",
+    "section": "1.3 Accessing RStudio",
+    "text": "1.3 Accessing RStudio\nThe best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, or access RStudio in web browser using a free Posit Cloud account\n\n1.3.1 Install on your computer\nTo install R and RStudio on your computer, follow the instructions here. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation.\n\n\n1.3.2 Posit Cloud (web browser)\nPosit Cloud works in the browser with a free account. You can make an account and get started here. This option is recommended for those who regularly use different computers and do not need the resources of a high-performance computer.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
@@ -324,6 +302,56 @@
     "crumbs": [
       "Hands-On Exercises",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise #2</span>"
+    ]
+  },
+  {
+    "objectID": "next_steps.html",
+    "href": "next_steps.html",
+    "title": "Next Steps",
+    "section": "",
+    "text": "Workshops\nThe next two parts of this workshop series will take place at this time in the coming weeks.",
+    "crumbs": [
+      "Next Steps"
+    ]
+  },
+  {
+    "objectID": "next_steps.html#workshops",
+    "href": "next_steps.html#workshops",
+    "title": "Next Steps",
+    "section": "",
+    "text": "Workshop\nDate\nTime\nLocation\n\n\n\n\nEffective Data Visualization in R\nFebruary 26th\n1:30-3:30\nFLE 109\n\n\nData Science Workflow in R\nMarch 5th\n1:30-3:30\nFLE 109",
+    "crumbs": [
+      "Next Steps"
+    ]
+  },
+  {
+    "objectID": "next_steps.html#online-resources",
+    "href": "next_steps.html#online-resources",
+    "title": "Next Steps",
+    "section": "Online Resources",
+    "text": "Online Resources\n\nHands-On Programming in R by Garrett Grolemund\nAdvanced R by Hadley Wickham\nR for Data Science (2e) by Hadley Wickham et. al.",
+    "crumbs": [
+      "Next Steps"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What is R?",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#why-use-r",
+    "href": "intro.html#why-use-r",
+    "title": "Introduction",
+    "section": "Why use R?",
+    "text": "Why use R?",
+    "crumbs": [
+      "Introduction"
     ]
   }
 ]

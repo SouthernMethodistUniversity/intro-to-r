@@ -216,6 +216,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./next_steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Next Steps</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -228,9 +234,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1.1</span> Overview</a></li>
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">1.2</span> Objectives</a></li>
-  <li><a href="#install-on-your-computer" id="toc-install-on-your-computer" class="nav-link" data-scroll-target="#install-on-your-computer"><span class="header-section-number">1.3</span> Install on your computer</a></li>
-  <li><a href="#posit-cloud" id="toc-posit-cloud" class="nav-link" data-scroll-target="#posit-cloud"><span class="header-section-number">1.4</span> Posit Cloud</a></li>
-  <li><a href="#m3" id="toc-m3" class="nav-link" data-scroll-target="#m3"><span class="header-section-number">1.5</span> M3</a></li>
+  <li><a href="#accessing-rstudio" id="toc-accessing-rstudio" class="nav-link" data-scroll-target="#accessing-rstudio"><span class="header-section-number">1.3</span> Accessing RStudio</a>
+  <ul class="collapse">
+  <li><a href="#install-on-your-computer" id="toc-install-on-your-computer" class="nav-link" data-scroll-target="#install-on-your-computer"><span class="header-section-number">1.3.1</span> Install on your computer</a></li>
+  <li><a href="#posit-cloud-web-browser" id="toc-posit-cloud-web-browser" class="nav-link" data-scroll-target="#posit-cloud-web-browser"><span class="header-section-number">1.3.2</span> Posit Cloud (web browser)</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -268,21 +276,20 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>To get your RStudio environment set up</li>
 </ul>
-<p>The best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, use Posit Cloud, or access it via M3 (one of SMU’s supercomputers).</p>
 </section>
-<section id="install-on-your-computer" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="install-on-your-computer"><span class="header-section-number">1.3</span> Install on your computer</h2>
-<p>To install R and RStudio on your computer, follow the instructions <a href="https://posit.co/download/rstudio-desktop/">here</a>. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation. This option is recommended for those who will primarily be using the same computer and do not need the resources of a high-performance computer.</p>
+<section id="accessing-rstudio" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="accessing-rstudio"><span class="header-section-number">1.3</span> Accessing RStudio</h2>
+<p>The best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, or access RStudio in web browser using a free Posit Cloud account</p>
+<section id="install-on-your-computer" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="install-on-your-computer"><span class="header-section-number">1.3.1</span> Install on your computer</h3>
+<p>To install R and RStudio on your computer, follow the instructions <a href="https://posit.co/download/rstudio-desktop/">here</a>. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation.</p>
 </section>
-<section id="posit-cloud" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="posit-cloud"><span class="header-section-number">1.4</span> Posit Cloud</h2>
+<section id="posit-cloud-web-browser" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="posit-cloud-web-browser"><span class="header-section-number">1.3.2</span> Posit Cloud (web browser)</h3>
 <p>Posit Cloud works in the browser with a free account. You can make an account and get started <a href="https://posit.cloud/">here</a>. This option is recommended for those who regularly use different computers and do not need the resources of a high-performance computer.</p>
+
+
 </section>
-<section id="m3" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="m3"><span class="header-section-number">1.5</span> M3</h2>
-<p>In order to use RStudio on M3, you will need to be on a ColdFront allocation, which can be requested on your behalf by a faculty or staff member. For the purposes of this workshop, your instructor will have a ColdFront allocation made available to you. Once you have an active account, you can follow the instructions <a href="https://southernmethodistuniversity.github.io/hpc_docs/portal.html">here</a> and open an RStudio Server session. This option is recommended for those who need the resources of a high-performance computer for fields such as Machine Learning and Artificial Intelligence.</p>
-
-
 </section>
 
 </main> <!-- /main -->
