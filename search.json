@@ -1,30 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to R Workshop",
-    "section": "",
-    "text": "Introduction",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "index.html#why-use-r",
-    "href": "index.html#why-use-r",
-    "title": "Introduction to R Workshop",
-    "section": "Why use R?",
-    "text": "Why use R?",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
     "objectID": "setup.html",
     "href": "setup.html",
     "title": "1  Setup",
     "section": "",
-    "text": "1.1 Install on your computer\nThe best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, use Posit Cloud, or access it via M3 (one of SMU’s supercomputers).\nTo install R and RStudio on your computer, follow the instructions here. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation. This option is recommended for those who will primarily be using the same computer and do not need the resources of a high-performance computer.",
+    "text": "1.1 Install on your computer\nTo install R and RStudio on your computer, follow the instructions here. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation. This option is recommended for those who will primarily be using the same computer and do not need the resources of a high-performance computer.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
@@ -116,6 +96,26 @@
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to R Workshop",
+    "section": "",
+    "text": "Introduction",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#why-use-r",
+    "href": "index.html#why-use-r",
+    "title": "Introduction to R Workshop",
+    "section": "Why use R?",
+    "text": "Why use R?",
+    "crumbs": [
+      "Introduction"
     ]
   }
 ]
