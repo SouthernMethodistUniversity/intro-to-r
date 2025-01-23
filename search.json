@@ -55,7 +55,7 @@
   {
     "objectID": "basics.html",
     "href": "basics.html",
-    "title": "2  Basics",
+    "title": "\n2  Basics\n",
     "section": "",
     "text": "2.1 Using RStudio\nRStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.",
     "crumbs": [
@@ -66,9 +66,9 @@
   {
     "objectID": "basics.html#using-rstudio",
     "href": "basics.html#using-rstudio",
-    "title": "2  Basics",
+    "title": "\n2  Basics\n",
     "section": "",
-    "text": "2.1.1 File Explorer\nIn the bottom right panel of RStudio, under the Files tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your working directory. Your working directory is the base folder you want to operate in within an R session. Any filepaths or items saved in your environment will use your working directory as its base.\nTo set your working directory, navigate to the folder you want to be your working directory, click one More, and then Set As Working Directory. You can always change this, and we will discuss the best way to make use of a working directory in the Projects section below.\n\n\n2.1.2 Console\nIn the bottom left panel of RStudio, under the Console tab, is where you will execute all of your R code. Each line of code is prompted by the &gt; symbol. You do not need to type in the &gt;, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the Enter key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.\n\n1 + 1\n\n[1] 2\n\n\n\n\n2.1.3 Scripts\n\n\n2.1.4 Environment\n\n\n2.1.5 Projects",
+    "text": "2.1.1 File Explorer\nIn the bottom right panel of RStudio, under the Files tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your working directory. Your working directory is the base folder you want to operate in within an R session. Any filepaths or items saved in your environment will use your working directory as its base.\nTo set your working directory, navigate to the folder you want to be your working directory, click one More, and then Set As Working Directory. You can always change this, and we will discuss the best way to make use of a working directory in the Projects section below.\n\n2.1.2 Console\nIn the bottom left panel of RStudio, under the Console tab, is where you will execute all of your R code. Each line of code is prompted by the &gt; symbol. You do not need to type in the &gt;, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the Enter key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.\n\n1 + 1\n\n[1] 2\n\n\n\n2.1.3 Scripts\n\n2.1.4 Environment\n\n2.1.5 Projects",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -77,8 +77,8 @@
   {
     "objectID": "basics.html#using-r-as-a-calculator",
     "href": "basics.html#using-r-as-a-calculator",
-    "title": "2  Basics",
-    "section": "2.2 Using R as a Calculator",
+    "title": "\n2  Basics\n",
+    "section": "\n2.2 Using R as a Calculator",
     "text": "2.2 Using R as a Calculator",
     "crumbs": [
       "Introduction",
@@ -88,8 +88,8 @@
   {
     "objectID": "basics.html#boolean-comparisons",
     "href": "basics.html#boolean-comparisons",
-    "title": "2  Basics",
-    "section": "2.3 Boolean Comparisons",
+    "title": "\n2  Basics\n",
+    "section": "\n2.3 Boolean Comparisons",
     "text": "2.3 Boolean Comparisons",
     "crumbs": [
       "Introduction",
@@ -99,8 +99,8 @@
   {
     "objectID": "basics.html#assigning-variables",
     "href": "basics.html#assigning-variables",
-    "title": "2  Basics",
-    "section": "2.4 Assigning Variables",
+    "title": "\n2  Basics\n",
+    "section": "\n2.4 Assigning Variables",
     "text": "2.4 Assigning Variables",
     "crumbs": [
       "Introduction",
@@ -110,8 +110,8 @@
   {
     "objectID": "basics.html#get-help",
     "href": "basics.html#get-help",
-    "title": "2  Basics",
-    "section": "2.5 Get Help",
+    "title": "\n2  Basics\n",
+    "section": "\n2.5 Get Help",
     "text": "2.5 Get Help",
     "crumbs": [
       "Introduction",
