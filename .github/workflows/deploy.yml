@@ -6,32 +6,29 @@ on:
     branches:
       - main
 
-# Deploy the JupyterBook to GitHub Pages
+# Deploy the Quarto Book to GitHub Pages
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    
     steps:
-      # Check out the repository
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
         with:
-          # To install LaTeX to build PDF book
-          tinytex: true
-          # uncomment below and fill to pin a version
-          # version: 0.9.105
+          r-version: '4.3.1'  # Use the latest stable version of R
 
-      #- uses: r-lib/actions/setup-r@v2
-      #  with:
-      #    use-public-rspm: true
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      # - uses: r-lib/actions/setup-r-dependencies@v2
-
-      - name: Render book to all format
-        # Add any command line argument needed
+      - name: Install R Packages
         run: |
-          quarto render
+          Rscript -e 'install.packages(c("rmarkdown", "tidyverse", "quarto"))'
+
+      - name: Render Quarto Project
+        run: quarto render
 
       # Deploy the built HTML to GitHub Pages
       - name: Deploy to GitHub Pages
