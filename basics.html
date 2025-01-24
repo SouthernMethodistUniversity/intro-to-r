@@ -223,14 +223,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercise1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise #2</span></span></a>
+  <a href="./solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Solutions</span></a>
   </div>
 </li>
       </ul>
@@ -249,8 +243,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">2.1</span> Overview</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">2.2</span> Objectives</a></li>
+<li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">2.1</span> Objectives</a></li>
+  <li><a href="#code-file" id="toc-code-file" class="nav-link" data-scroll-target="#code-file"><span class="header-section-number">2.2</span> Code File</a></li>
   <li>
 <a href="#using-rstudio" id="toc-using-rstudio" class="nav-link" data-scroll-target="#using-rstudio"><span class="header-section-number">2.3</span> Using RStudio</a>
   <ul class="collapse">
@@ -258,13 +252,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#console" id="toc-console" class="nav-link" data-scroll-target="#console"><span class="header-section-number">2.3.2</span> Console</a></li>
   <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts"><span class="header-section-number">2.3.3</span> Scripts</a></li>
   <li><a href="#environment" id="toc-environment" class="nav-link" data-scroll-target="#environment"><span class="header-section-number">2.3.4</span> Environment</a></li>
-  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects"><span class="header-section-number">2.3.5</span> Projects</a></li>
   </ul>
 </li>
-  <li><a href="#using-r-as-a-calculator" id="toc-using-r-as-a-calculator" class="nav-link" data-scroll-target="#using-r-as-a-calculator"><span class="header-section-number">2.4</span> Using R as a Calculator</a></li>
-  <li><a href="#boolean-comparisons" id="toc-boolean-comparisons" class="nav-link" data-scroll-target="#boolean-comparisons"><span class="header-section-number">2.5</span> Boolean Comparisons</a></li>
-  <li><a href="#assigning-variables" id="toc-assigning-variables" class="nav-link" data-scroll-target="#assigning-variables"><span class="header-section-number">2.6</span> Assigning Variables</a></li>
-  <li><a href="#get-help" id="toc-get-help" class="nav-link" data-scroll-target="#get-help"><span class="header-section-number">2.7</span> Get Help</a></li>
+  <li>
+<a href="#using-r-as-a-calculator" id="toc-using-r-as-a-calculator" class="nav-link" data-scroll-target="#using-r-as-a-calculator"><span class="header-section-number">2.4</span> Using R as a Calculator</a>
+  <ul class="collapse">
+<li><a href="#basic-calculations" id="toc-basic-calculations" class="nav-link" data-scroll-target="#basic-calculations"><span class="header-section-number">2.4.1</span> Basic Calculations</a></li>
+  <li><a href="#boolean-comparisons" id="toc-boolean-comparisons" class="nav-link" data-scroll-target="#boolean-comparisons"><span class="header-section-number">2.4.2</span> Boolean Comparisons</a></li>
+  </ul>
+</li>
+  <li><a href="#assigning-variables" id="toc-assigning-variables" class="nav-link" data-scroll-target="#assigning-variables"><span class="header-section-number">2.5</span> Assigning Variables</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments"><span class="header-section-number">2.6</span> Comments</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><span class="header-section-number">2.7</span> Functions</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/basics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -285,20 +284,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><section id="overview" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="overview">
-<span class="header-section-number">2.1</span> Overview</h2>
-</section><section id="objectives" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="objectives">
-<span class="header-section-number">2.2</span> Objectives</h2>
+</header><section id="objectives" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="objectives">
+<span class="header-section-number">2.1</span> Objectives</h2>
+<ul>
+<li>Get comfortable with the RStudio IDE</li>
+<li>Learn to use R as a calculator</li>
+<li>Learn how to create variables</li>
+<li>Get introduced to functions</li>
+</ul></section><section id="code-file" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="code-file">
+<span class="header-section-number">2.2</span> Code File</h2>
+<p>All code from this section can be found in <a href="code/01_Basics.R"><code>01_Basics.R</code></a></p>
 </section><section id="using-rstudio" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="using-rstudio">
 <span class="header-section-number">2.3</span> Using RStudio</h2>
 <p>RStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.</p>
 <section id="file-explorer" class="level3" data-number="2.3.1"><h3 data-number="2.3.1" class="anchored" data-anchor-id="file-explorer">
 <span class="header-section-number">2.3.1</span> File Explorer</h3>
-<p>In the bottom right panel of RStudio, under the <strong>Files</strong> tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your <em>working directory</em>. Your <em>working directory</em> is the base folder you want to operate in within an R session. Any file paths or items saved in your <em>environment</em> will use your <em>working directory</em> as its base.</p>
-<p>To set your <em>working directory</em>, navigate to the folder you want to be your <em>working directory</em>, click one <strong>More</strong>, and then <strong>Set As Working Directory</strong>. You can always change this, and we will discuss the best way to make use of a <em>working directory</em> in the Projects section below.</p>
+<p>In the bottom right panel of RStudio, under the <code>Files</code> tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your <em>working directory</em>. Your <em>working directory</em> is the base folder you want to operate in within an R session. Any file paths or items saved in your <em>environment</em> will use your <em>working directory</em> as its base.</p>
+<p>To set your <em>working directory</em>, navigate to the folder you want to be your <em>working directory</em>, click one <code>More</code>, and then <code>Set As Working Directory</code>. You can always change this, and we will discuss the best way to make use of a <em>working directory</em> in the Projects section below.</p>
 </section><section id="console" class="level3" data-number="2.3.2"><h3 data-number="2.3.2" class="anchored" data-anchor-id="console">
 <span class="header-section-number">2.3.2</span> Console</h3>
-<p>In the bottom left panel of RStudio, under the <strong>Console</strong> tab, is where you will execute all of your R code. Each line of code is prompted by the <code>&gt;</code> symbol. You do not need to type in the <code>&gt;</code>, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the <strong>Enter</strong> key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.</p>
+<p>In the bottom left panel of RStudio, under the <code>Console</code> tab, is where you will execute all of your R code. Each line of code is prompted by the <code>&gt;</code> symbol. You do not need to type in the <code>&gt;</code>, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the <strong>Enter</strong> key on your keyboard. Below is an example of how to add 2 numbers on the console.</p>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -309,17 +314,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="header-section-number">2.3.3</span> Scripts</h3>
 </section><section id="environment" class="level3" data-number="2.3.4"><h3 data-number="2.3.4" class="anchored" data-anchor-id="environment">
 <span class="header-section-number">2.3.4</span> Environment</h3>
-<p>All variables you create will appear in the environment panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved.</p>
-</section><section id="projects" class="level3" data-number="2.3.5"><h3 data-number="2.3.5" class="anchored" data-anchor-id="projects">
-<span class="header-section-number">2.3.5</span> Projects</h3>
+<p>All variables you create will appear in the <code>Environment</code> panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved, but this is not guaranteed.</p>
 </section></section><section id="using-r-as-a-calculator" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="using-r-as-a-calculator">
 <span class="header-section-number">2.4</span> Using R as a Calculator</h2>
-</section><section id="boolean-comparisons" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="boolean-comparisons">
-<span class="header-section-number">2.5</span> Boolean Comparisons</h2>
-</section><section id="assigning-variables" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="assigning-variables">
-<span class="header-section-number">2.6</span> Assigning Variables</h2>
-</section><section id="get-help" class="level2" data-number="2.7"><h2 data-number="2.7" class="anchored" data-anchor-id="get-help">
-<span class="header-section-number">2.7</span> Get Help</h2>
+<section id="basic-calculations" class="level3" data-number="2.4.1"><h3 data-number="2.4.1" class="anchored" data-anchor-id="basic-calculations">
+<span class="header-section-number">2.4.1</span> Basic Calculations</h3>
+</section><section id="boolean-comparisons" class="level3" data-number="2.4.2"><h3 data-number="2.4.2" class="anchored" data-anchor-id="boolean-comparisons">
+<span class="header-section-number">2.4.2</span> Boolean Comparisons</h3>
+</section></section><section id="assigning-variables" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="assigning-variables">
+<span class="header-section-number">2.5</span> Assigning Variables</h2>
+<p>You can assign a variable in R using either the <code>&lt;-</code> or <code>=</code> operator. A variable is a name that stores an object. The only limitation to variable names is that you cannot start with a number. For the most part, the code in this workshop uses <code>&lt;-</code>, but you are welcome to use <code>=</code> if you prefer.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">2</span></span>
+<span><span class="va">x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y</span> <span class="op">=</span> <span class="fl">2</span></span>
+<span><span class="va">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section><section id="comments" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="comments">
+<span class="header-section-number">2.6</span> Comments</h2>
+<p>As in most programming languages, you have the ability to add comments to your code. In R, the <code>#</code> symbol tells R to ignore everything after it. You can use comments to explain what is happening in your code so that you or someone else can read your really complex code a year later without too much effort. Comments are used throughout the code in this workshop to help you understand what each line does.</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># This is a comment</span></span>
+<span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fl">3</span> <span class="co"># This is also a comment</span></span>
+<span><span class="va">z</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<p>As you can see, the comment did not interfere with setting the variable <code>z</code>.</p>
+</section><section id="functions" class="level2" data-number="2.7"><h2 data-number="2.7" class="anchored" data-anchor-id="functions">
+<span class="header-section-number">2.7</span> Functions</h2>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">

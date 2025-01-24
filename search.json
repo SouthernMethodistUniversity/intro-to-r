@@ -34,18 +34,7 @@
     "href": "setup.html",
     "title": "1  Setup",
     "section": "",
-    "text": "1.1 Overview",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
-    ]
-  },
-  {
-    "objectID": "setup.html#overview",
-    "href": "setup.html#overview",
-    "title": "1  Setup",
-    "section": "",
-    "text": "Teaching: 5 minutes\nExercises: 2 minutes",
+    "text": "1.1 Objectives",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
@@ -55,8 +44,8 @@
     "objectID": "setup.html#objectives",
     "href": "setup.html#objectives",
     "title": "1  Setup",
-    "section": "1.2 Objectives",
-    "text": "1.2 Objectives\n\nTo get your RStudio environment set up",
+    "section": "",
+    "text": "Get your RStudio environment set up",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
@@ -66,8 +55,19 @@
     "objectID": "setup.html#accessing-rstudio",
     "href": "setup.html#accessing-rstudio",
     "title": "1  Setup",
-    "section": "1.3 Accessing RStudio",
-    "text": "1.3 Accessing RStudio\nThe best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, or access RStudio in web browser using a free Posit Cloud account\n\n1.3.1 Install on your computer\nTo install R and RStudio on your computer, follow the instructions here. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation.\n\n\n1.3.2 Posit Cloud (web browser)\nPosit Cloud works in the browser with a free account. You can make an account and get started here. This option is recommended for those who regularly use different computers and do not need the resources of a high-performance computer.",
+    "section": "1.2 Accessing RStudio",
+    "text": "1.2 Accessing RStudio\nThe best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, or access RStudio in web browser using a free Posit Cloud account\n\n1.2.1 Install on your computer\nTo install R and RStudio on your computer, follow the instructions here. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation.\n\n\n1.2.2 Posit Cloud (web browser)\nPosit Cloud works in the browser with a free account. You can make an account and get started here. This option is recommended for those who regularly use different computers for their work.",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
+    ]
+  },
+  {
+    "objectID": "setup.html#access-workshop-files",
+    "href": "setup.html#access-workshop-files",
+    "title": "1  Setup",
+    "section": "1.3 Access Workshop Files",
+    "text": "1.3 Access Workshop Files\n\n1.3.1 Clone from GitHub\n\nFrom the Terminal tab in RStudio in the bottom left panel, type these commands:\n\ngit clone https://github.com/SouthernMethodistUniversity/intro-to-r.git\ncd intro-to-r/code/\n\nNavigate to the intro-to-r/code/ directory in the Files tab on the bottom left panel in RStudio\nClick on More &gt; Set As Working Directory\n\n\n\n1.3.2 Download from GitHub\n\nGo to github.com/SouthernMethodistUniversity/intro-to-r\nDownload the folder by going to Code &gt; Download ZIP\nNavigate to the intro-to-r/code/ directory in the Files tab on the bottom left panel in RStudio\nClick on More &gt; Set As Working Directory",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup</span>"
@@ -78,7 +78,7 @@
     "href": "basics.html",
     "title": "\n2  Basics\n",
     "section": "",
-    "text": "2.1 Overview",
+    "text": "2.1 Objectives",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -88,8 +88,19 @@
     "objectID": "basics.html#objectives",
     "href": "basics.html#objectives",
     "title": "\n2  Basics\n",
-    "section": "\n2.2 Objectives",
-    "text": "2.2 Objectives",
+    "section": "",
+    "text": "Get comfortable with the RStudio IDE\nLearn to use R as a calculator\nLearn how to create variables\nGet introduced to functions",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
+    "objectID": "basics.html#code-file",
+    "href": "basics.html#code-file",
+    "title": "\n2  Basics\n",
+    "section": "\n2.2 Code File",
+    "text": "2.2 Code File\nAll code from this section can be found in 01_Basics.R",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -100,7 +111,7 @@
     "href": "basics.html#using-rstudio",
     "title": "\n2  Basics\n",
     "section": "\n2.3 Using RStudio",
-    "text": "2.3 Using RStudio\nRStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.\n\n2.3.1 File Explorer\nIn the bottom right panel of RStudio, under the Files tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your working directory. Your working directory is the base folder you want to operate in within an R session. Any file paths or items saved in your environment will use your working directory as its base.\nTo set your working directory, navigate to the folder you want to be your working directory, click one More, and then Set As Working Directory. You can always change this, and we will discuss the best way to make use of a working directory in the Projects section below.\n\n2.3.2 Console\nIn the bottom left panel of RStudio, under the Console tab, is where you will execute all of your R code. Each line of code is prompted by the &gt; symbol. You do not need to type in the &gt;, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the Enter key on your keyboard. Below is an example of how to add 2 numbers on the console. The details of this will be explored in future sections.\n\n1 + 1\n\n[1] 2\n\n\n\n2.3.3 Scripts\n\n2.3.4 Environment\nAll variables you create will appear in the environment panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved.\n\n2.3.5 Projects",
+    "text": "2.3 Using RStudio\nRStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.\n\n2.3.1 File Explorer\nIn the bottom right panel of RStudio, under the Files tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your working directory. Your working directory is the base folder you want to operate in within an R session. Any file paths or items saved in your environment will use your working directory as its base.\nTo set your working directory, navigate to the folder you want to be your working directory, click one More, and then Set As Working Directory. You can always change this, and we will discuss the best way to make use of a working directory in the Projects section below.\n\n2.3.2 Console\nIn the bottom left panel of RStudio, under the Console tab, is where you will execute all of your R code. Each line of code is prompted by the &gt; symbol. You do not need to type in the &gt;, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the Enter key on your keyboard. Below is an example of how to add 2 numbers on the console.\n\n1 + 1\n\n[1] 2\n\n\n\n2.3.3 Scripts\n\n2.3.4 Environment\nAll variables you create will appear in the Environment panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved, but this is not guaranteed.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -111,18 +122,7 @@
     "href": "basics.html#using-r-as-a-calculator",
     "title": "\n2  Basics\n",
     "section": "\n2.4 Using R as a Calculator",
-    "text": "2.4 Using R as a Calculator",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
-    ]
-  },
-  {
-    "objectID": "basics.html#boolean-comparisons",
-    "href": "basics.html#boolean-comparisons",
-    "title": "\n2  Basics\n",
-    "section": "\n2.5 Boolean Comparisons",
-    "text": "2.5 Boolean Comparisons",
+    "text": "2.4 Using R as a Calculator\n\n2.4.1 Basic Calculations\n\n2.4.2 Boolean Comparisons",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -132,19 +132,30 @@
     "objectID": "basics.html#assigning-variables",
     "href": "basics.html#assigning-variables",
     "title": "\n2  Basics\n",
-    "section": "\n2.6 Assigning Variables",
-    "text": "2.6 Assigning Variables",
+    "section": "\n2.5 Assigning Variables",
+    "text": "2.5 Assigning Variables\nYou can assign a variable in R using either the &lt;- or = operator. A variable is a name that stores an object. The only limitation to variable names is that you cannot start with a number. For the most part, the code in this workshop uses &lt;-, but you are welcome to use = if you prefer.\n\nx &lt;- 2\nx\n\n[1] 2\n\ny = 2\ny\n\n[1] 2",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
-    "objectID": "basics.html#get-help",
-    "href": "basics.html#get-help",
+    "objectID": "basics.html#comments",
+    "href": "basics.html#comments",
     "title": "\n2  Basics\n",
-    "section": "\n2.7 Get Help",
-    "text": "2.7 Get Help",
+    "section": "\n2.6 Comments",
+    "text": "2.6 Comments\nAs in most programming languages, you have the ability to add comments to your code. In R, the # symbol tells R to ignore everything after it. You can use comments to explain what is happening in your code so that you or someone else can read your really complex code a year later without too much effort. Comments are used throughout the code in this workshop to help you understand what each line does.\n\n# This is a comment\nz &lt;- 3 # This is also a comment\nz\n\n[1] 3\n\n\nAs you can see, the comment did not interfere with setting the variable z.",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
+    "objectID": "basics.html#functions",
+    "href": "basics.html#functions",
+    "title": "\n2  Basics\n",
+    "section": "\n2.7 Functions",
+    "text": "2.7 Functions",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -153,9 +164,9 @@
   {
     "objectID": "data_types.html",
     "href": "data_types.html",
-    "title": "3  Data Types",
+    "title": "\n3  Data Types\n",
     "section": "",
-    "text": "3.1 Overview",
+    "text": "3.1 Objectives",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
@@ -164,9 +175,75 @@
   {
     "objectID": "data_types.html#objectives",
     "href": "data_types.html#objectives",
-    "title": "3  Data Types",
-    "section": "3.2 Objectives",
-    "text": "3.2 Objectives",
+    "title": "\n3  Data Types\n",
+    "section": "",
+    "text": "Learn about the basic data types, including numeric, logical, and character\n\nLearn how to identify the data type of an object\nLearn how to change the data type of an object",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
+    ]
+  },
+  {
+    "objectID": "data_types.html#identification",
+    "href": "data_types.html#identification",
+    "title": "\n3  Data Types\n",
+    "section": "\n3.2 Identification",
+    "text": "3.2 Identification\nTo identify the data type of an object, you can use the class() function. Let’s use the class() function on the x variable we created in the last section:\n\nx &lt;- 2 # reassign your variable if you need to\nclass(x) # call the class() function on x\n\n[1] \"numeric\"\n\n\nAs you can see, our class() function showed us that x, which holds a 2, is a of the numeric data type. We will use this class() function throughout this section to test our understanding.",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
+    ]
+  },
+  {
+    "objectID": "data_types.html#numbers",
+    "href": "data_types.html#numbers",
+    "title": "\n3  Data Types\n",
+    "section": "\n3.3 Numbers",
+    "text": "3.3 Numbers\nThere are 3 types of number data types in R, but you will usually just use the numeric type.\n\n3.3.1 The numeric data type\nThe numeric data type can represent any number (negative or positive), with any amount of decimals. There are a lot of ways to manipulate these numbers in R. For example:\n\nclass(2)\n\n[1] \"numeric\"\n\nclass(3.14)\n\n[1] \"numeric\"\n\nclass(-0.4621473)\n\n[1] \"numeric\"\n\n\nWhen dealing with decimals, you can round numbers or floor them using the round() and floor() functions.\n\nround(3.56)\n\n[1] 4\n\nfloor(3.56)\n\n[1] 3\n\n\n\n3.3.2 The integer data type\nThe integer data type stores just integers in the range of \\(-2,000,000,000\\) to \\(2,000,000,000\\). This data type is rarely used in practice, but it helps to illustrate the nuance of some data types and why its important to check what something is.\n\ni &lt;- as.integer(5)\ni\n\n[1] 5\n\nclass(i)\n\n[1] \"integer\"\n\nclass(5)\n\n[1] \"numeric\"\n\n\nNotice that you need to explicitly set the variable with the as.integer() function because the output looks exactly the same as if you set i &lt;- 5. The primary difference between the two is size. If you have a very large amount of numbers you need to store, and they are all integers, the integer data type may be more appropriate.\n\n3.3.3 The complex data type\nThe complex data type is also rarely used, but is sometimes necessary in mathematical or engineering applications. This data type is used to represent complex numbers.\n\nc &lt;- 3+2i\nc\n\n[1] 3+2i\n\nclass(c)\n\n[1] \"complex\"\n\n\nUnlike the integer data type, complex objects ar automatically detected by R if you use the \\(a+bi\\) notation. However, if you want to be extra careful, you can use the complex() or as.complex() functions.\n\ncomplex(real = 3, imaginary = 2)\n\n[1] 3+2i\n\nas.complex(3+2i)\n\n[1] 3+2i\n\n\n\n3.3.4 Special Numbers and Functions\nThere are a few special numbers and functions to be aware of:\nPi, \\(\\pi\\)\n\n\npi\n\n[1] 3.141593\n\n\nEuler’s number, \\(e\\)\n\n\nexp(1) # e = e^1\n\n[1] 2.718282\n\nexp(5) # e^5\n\n[1] 148.4132\n\n\nLogarithms\nThe log() function, by default takes the natural log of a number, \\(ln()\\), but you can specify another base using the the base argument.\n\nlog(2)\n\n[1] 0.6931472\n\nlog(2, base = 10)\n\n[1] 0.30103\n\nlog(2) == log(2, base = exp(1))\n\n[1] TRUE",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
+    ]
+  },
+  {
+    "objectID": "data_types.html#the-logical-data-type",
+    "href": "data_types.html#the-logical-data-type",
+    "title": "\n3  Data Types\n",
+    "section": "\n3.4 The logical data type",
+    "text": "3.4 The logical data type\nWe have already seen the logical data type earlier in this workshop. This data type can either be TRUE or FALSE. Typically, this data type is not created explicitly, but rather through Boolean Comparisons.\n\nx &lt;- TRUE # explicitly\nclass(x)\n\n[1] \"logical\"\n\nx\n\n[1] TRUE\n\ny &lt;- 1 == 1 # boolean comparisons\ny\n\n[1] TRUE\n\nz &lt;- \"apples\" == \"oranges\"\nz\n\n[1] FALSE\n\n\nIf you use mathematical operations on a logical data type, then it will treat TRUE as \\(1\\) and FALSE as \\(0\\). This can be helpful because you can add together a bunch of logical data types to easily see how many cases are TRUE.\n\nx + y + z # TRUE + TRUE + FALSE = 1 + 1 + 0\n\n[1] 2",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
+    ]
+  },
+  {
+    "objectID": "data_types.html#the-character-data-type",
+    "href": "data_types.html#the-character-data-type",
+    "title": "\n3  Data Types\n",
+    "section": "\n3.5 The character data type",
+    "text": "3.5 The character data type\nThe character data type is used to to hold strings of characters.\n\nx &lt;- \"apple\"\nclass(x)\n\n[1] \"character\"\n\nx\n\n[1] \"apple\"\n\n\nNotice that the output from the class() function actually output another character object which contains the word \"character\"! This illustrates how everything in R is an object.",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
+    ]
+  },
+  {
+    "objectID": "data_types.html#coercion",
+    "href": "data_types.html#coercion",
+    "title": "\n3  Data Types\n",
+    "section": "\n3.6 Coercion",
+    "text": "3.6 Coercion\nSometimes you may need to move between data types, which is known as data type coercion. A common example is moving between numeric and string.\n\nx &lt;- 2\nclass(x)\n\n[1] \"numeric\"\n\nx\n\n[1] 2\n\ny &lt;- as.character(x)\nclass(y)\n\n[1] \"character\"\n\ny\n\n[1] \"2\"\n\n\nOther functions that do data type coercion include:\n\nas.integer()\nas.numeric()\nas.logical()\n\n# We'll visit these in the next section\nas.factor()\nas.vector() \nas.data.frame()",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
+    ]
+  },
+  {
+    "objectID": "data_types.html#missing-values",
+    "href": "data_types.html#missing-values",
+    "title": "\n3  Data Types\n",
+    "section": "\n3.7 Missing Values",
+    "text": "3.7 Missing Values",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
@@ -177,18 +254,51 @@
     "href": "data_structures.html",
     "title": "4  Data Structures",
     "section": "",
-    "text": "4.1 Overview",
+    "text": "4.1 Objectives",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
     ]
   },
   {
-    "objectID": "data_structures.html#objectives",
-    "href": "data_structures.html#objectives",
+    "objectID": "data_structures.html#vectors",
+    "href": "data_structures.html#vectors",
     "title": "4  Data Structures",
-    "section": "4.2 Objectives",
-    "text": "4.2 Objectives",
+    "section": "4.2 Vectors",
+    "text": "4.2 Vectors\n\n4.2.1 Subsetting\n\n\n4.2.2 Factors",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
+    ]
+  },
+  {
+    "objectID": "data_structures.html#data-frames",
+    "href": "data_structures.html#data-frames",
+    "title": "4  Data Structures",
+    "section": "4.3 Data Frames",
+    "text": "4.3 Data Frames\n\n4.3.1 Loading and Saving\n\n\n4.3.2 Subsetting and Combining",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
+    ]
+  },
+  {
+    "objectID": "data_structures.html#matrices-and-arrays",
+    "href": "data_structures.html#matrices-and-arrays",
+    "title": "4  Data Structures",
+    "section": "4.4 Matrices and Arrays",
+    "text": "4.4 Matrices and Arrays",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
+    ]
+  },
+  {
+    "objectID": "data_structures.html#lists",
+    "href": "data_structures.html#lists",
+    "title": "4  Data Structures",
+    "section": "4.5 Lists",
+    "text": "4.5 Lists",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
@@ -199,18 +309,51 @@
     "href": "functions.html",
     "title": "5  Functions",
     "section": "",
-    "text": "5.1 Overview",
+    "text": "5.1 Objectives",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
   {
-    "objectID": "functions.html#objectives",
-    "href": "functions.html#objectives",
+    "objectID": "functions.html#built-in-functions",
+    "href": "functions.html#built-in-functions",
     "title": "5  Functions",
-    "section": "5.2 Objectives",
-    "text": "5.2 Objectives",
+    "section": "5.2 Built-In Functions",
+    "text": "5.2 Built-In Functions",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
+    ]
+  },
+  {
+    "objectID": "functions.html#custom-functions",
+    "href": "functions.html#custom-functions",
+    "title": "5  Functions",
+    "section": "5.3 Custom Functions",
+    "text": "5.3 Custom Functions",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
+    ]
+  },
+  {
+    "objectID": "functions.html#default-arguments",
+    "href": "functions.html#default-arguments",
+    "title": "5  Functions",
+    "section": "5.4 Default Arguments",
+    "text": "5.4 Default Arguments",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
+    ]
+  },
+  {
+    "objectID": "functions.html#nested-functions",
+    "href": "functions.html#nested-functions",
+    "title": "5  Functions",
+    "section": "5.5 Nested Functions",
+    "text": "5.5 Nested Functions",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
@@ -221,18 +364,51 @@
     "href": "ifelse.html",
     "title": "6  If-Else Statements",
     "section": "",
-    "text": "6.1 Overview",
+    "text": "6.1 Objectives",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
     ]
   },
   {
-    "objectID": "ifelse.html#objectives",
-    "href": "ifelse.html#objectives",
+    "objectID": "ifelse.html#if-statements",
+    "href": "ifelse.html#if-statements",
     "title": "6  If-Else Statements",
-    "section": "6.2 Objectives",
-    "text": "6.2 Objectives",
+    "section": "6.2 If Statements",
+    "text": "6.2 If Statements",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
+    ]
+  },
+  {
+    "objectID": "ifelse.html#else-statements",
+    "href": "ifelse.html#else-statements",
+    "title": "6  If-Else Statements",
+    "section": "6.3 Else Statements",
+    "text": "6.3 Else Statements",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
+    ]
+  },
+  {
+    "objectID": "ifelse.html#else-if-statements",
+    "href": "ifelse.html#else-if-statements",
+    "title": "6  If-Else Statements",
+    "section": "6.4 Else-If Statements",
+    "text": "6.4 Else-If Statements",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
+    ]
+  },
+  {
+    "objectID": "ifelse.html#the-ifelse-function",
+    "href": "ifelse.html#the-ifelse-function",
+    "title": "6  If-Else Statements",
+    "section": "6.5 The ifelse() Function",
+    "text": "6.5 The ifelse() Function",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
@@ -243,65 +419,76 @@
     "href": "loops.html",
     "title": "7  Loops",
     "section": "",
-    "text": "7.1 Overview",
+    "text": "7.1 Objectives",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
     ]
   },
   {
-    "objectID": "loops.html#objectives",
-    "href": "loops.html#objectives",
+    "objectID": "loops.html#for-loops",
+    "href": "loops.html#for-loops",
     "title": "7  Loops",
-    "section": "7.2 Objectives",
-    "text": "7.2 Objectives",
+    "section": "7.2 For Loops",
+    "text": "7.2 For Loops",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
     ]
   },
   {
-    "objectID": "exercise1.html",
-    "href": "exercise1.html",
-    "title": "8  Exercise #1",
+    "objectID": "loops.html#while-loops",
+    "href": "loops.html#while-loops",
+    "title": "7  Loops",
+    "section": "7.3 While Loops",
+    "text": "7.3 While Loops",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html#apply-functions",
+    "href": "loops.html#apply-functions",
+    "title": "7  Loops",
+    "section": "7.4 Apply Functions",
+    "text": "7.4 Apply Functions",
+    "crumbs": [
+      "Control Structures",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solutions",
     "section": "",
-    "text": "8.1 Overview",
+    "text": "Exercise #1",
     "crumbs": [
       "Hands-On Exercises",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise #1</span>"
+      "Solutions"
     ]
   },
   {
-    "objectID": "exercise1.html#objectives",
-    "href": "exercise1.html#objectives",
-    "title": "8  Exercise #1",
-    "section": "8.2 Objectives",
-    "text": "8.2 Objectives",
-    "crumbs": [
-      "Hands-On Exercises",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise #1</span>"
-    ]
-  },
-  {
-    "objectID": "exercise2.html",
-    "href": "exercise2.html",
-    "title": "9  Exercise #2",
+    "objectID": "solutions.html#exercise-1",
+    "href": "solutions.html#exercise-1",
+    "title": "Solutions",
     "section": "",
-    "text": "9.1 Overview",
+    "text": "Write a function that …\nWrite a loop that only prints out … if …",
     "crumbs": [
       "Hands-On Exercises",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise #2</span>"
+      "Solutions"
     ]
   },
   {
-    "objectID": "exercise2.html#objectives",
-    "href": "exercise2.html#objectives",
-    "title": "9  Exercise #2",
-    "section": "9.2 Objectives",
-    "text": "9.2 Objectives",
+    "objectID": "solutions.html#exercise-2",
+    "href": "solutions.html#exercise-2",
+    "title": "Solutions",
+    "section": "Exercise #2",
+    "text": "Exercise #2",
     "crumbs": [
       "Hands-On Exercises",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise #2</span>"
+      "Solutions"
     ]
   },
   {
@@ -352,6 +539,36 @@
     "text": "Why use R?",
     "crumbs": [
       "Introduction"
+    ]
+  },
+  {
+    "objectID": "objects.html",
+    "href": "objects.html",
+    "title": "Objects",
+    "section": "",
+    "text": "Almost everything you work with in R is an object. In the previous section you created a variable that holds a number, which is considered a numeric object. But, objects can be vectors, datasets, strings of words, or even functions!\nIn the next 2 sections you will learn about the different data types and structures of objects you can use in R. If you are ever in doubt about what an object is, there are plenty of ways to find out, which we will also cover in the following sections.",
+    "crumbs": [
+      "Objects"
+    ]
+  },
+  {
+    "objectID": "handson.html",
+    "href": "handson.html",
+    "title": "Hands-On Exercises",
+    "section": "",
+    "text": "Exercise #1",
+    "crumbs": [
+      "Hands-On Exercises"
+    ]
+  },
+  {
+    "objectID": "handson.html#exercise-2",
+    "href": "handson.html#exercise-2",
+    "title": "Hands-On Exercises",
+    "section": "Exercise #2",
+    "text": "Exercise #2",
+    "crumbs": [
+      "Hands-On Exercises"
     ]
   }
 ]

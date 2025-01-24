@@ -8,7 +8,7 @@
 
 <meta name="author" content="SMU OIT Research Technology Services">
 
-<title>8&nbsp; Exercise #1 – Introduction to R Workshop</title>
+<title>Solutions – Introduction to R Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./exercise2.html" rel="next">
+<link href="./next_steps.html" rel="next">
 <link href="./handson.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./handson.html">Hands-On Exercises</a></li><li class="breadcrumb-item"><a href="./exercise1.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./handson.html">Hands-On Exercises</a></li><li class="breadcrumb-item"><a href="./solutions.html">Solutions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -204,14 +204,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercise1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise #2</span></span></a>
+  <a href="./solutions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Solutions</span></a>
   </div>
 </li>
       </ul>
@@ -232,17 +226,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">8.1</span> Overview</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">8.2</span> Objectives</a></li>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link active" data-scroll-target="#exercise-1">Exercise #1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise #2</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/exercise1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/solutions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./handson.html">Hands-On Exercises</a></li><li class="breadcrumb-item"><a href="./exercise1.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./handson.html">Hands-On Exercises</a></li><li class="breadcrumb-item"><a href="./solutions.html">Solutions</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></h1>
+<h1 class="title">Solutions</h1>
 </div>
 
 
@@ -259,11 +253,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">8.1</span> Overview</h2>
+<section id="exercise-1" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1">Exercise #1</h2>
+<ol type="1">
+<li><p>Write a function that …</p></li>
+<li><p>Write a loop that only prints out … if …</p></li>
+</ol>
 </section>
-<section id="objectives" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="objectives"><span class="header-section-number">8.2</span> Objectives</h2>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise #2</h2>
 
 
 </section>
@@ -696,8 +694,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./exercise2.html" class="pagination-link" aria-label="Exercise #2">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise #2</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./next_steps.html" class="pagination-link" aria-label="Next Steps">
+        <span class="nav-page-text">Next Steps</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -709,7 +707,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/exercise1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/solutions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a></p>
 </div>

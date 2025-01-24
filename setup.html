@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -204,14 +238,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercise1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise #2</span></span></a>
+  <a href="./solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Solutions</span></a>
   </div>
 </li>
       </ul>
@@ -232,12 +260,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1.1</span> Overview</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">1.2</span> Objectives</a></li>
-  <li><a href="#accessing-rstudio" id="toc-accessing-rstudio" class="nav-link" data-scroll-target="#accessing-rstudio"><span class="header-section-number">1.3</span> Accessing RStudio</a>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">1.1</span> Objectives</a></li>
+  <li><a href="#accessing-rstudio" id="toc-accessing-rstudio" class="nav-link" data-scroll-target="#accessing-rstudio"><span class="header-section-number">1.2</span> Accessing RStudio</a>
   <ul class="collapse">
-  <li><a href="#install-on-your-computer" id="toc-install-on-your-computer" class="nav-link" data-scroll-target="#install-on-your-computer"><span class="header-section-number">1.3.1</span> Install on your computer</a></li>
-  <li><a href="#posit-cloud-web-browser" id="toc-posit-cloud-web-browser" class="nav-link" data-scroll-target="#posit-cloud-web-browser"><span class="header-section-number">1.3.2</span> Posit Cloud (web browser)</a></li>
+  <li><a href="#install-on-your-computer" id="toc-install-on-your-computer" class="nav-link" data-scroll-target="#install-on-your-computer"><span class="header-section-number">1.2.1</span> Install on your computer</a></li>
+  <li><a href="#posit-cloud-web-browser" id="toc-posit-cloud-web-browser" class="nav-link" data-scroll-target="#posit-cloud-web-browser"><span class="header-section-number">1.2.2</span> Posit Cloud (web browser)</a></li>
+  </ul></li>
+  <li><a href="#access-workshop-files" id="toc-access-workshop-files" class="nav-link" data-scroll-target="#access-workshop-files"><span class="header-section-number">1.3</span> Access Workshop Files</a>
+  <ul class="collapse">
+  <li><a href="#clone-from-github" id="toc-clone-from-github" class="nav-link" data-scroll-target="#clone-from-github"><span class="header-section-number">1.3.1</span> Clone from GitHub</a></li>
+  <li><a href="#download-from-github" id="toc-download-from-github" class="nav-link" data-scroll-target="#download-from-github"><span class="header-section-number">1.3.2</span> Download from GitHub</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -264,29 +296,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.1</span> Overview</h2>
+<section id="objectives" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">1.1</span> Objectives</h2>
 <ul>
-<li><strong>Teaching:</strong> 5 minutes</li>
-<li><strong>Exercises:</strong> 2 minutes</li>
+<li>Get your RStudio environment set up</li>
 </ul>
 </section>
-<section id="objectives" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="objectives"><span class="header-section-number">1.2</span> Objectives</h2>
-<ul>
-<li>To get your RStudio environment set up</li>
-</ul>
-</section>
-<section id="accessing-rstudio" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="accessing-rstudio"><span class="header-section-number">1.3</span> Accessing RStudio</h2>
+<section id="accessing-rstudio" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="accessing-rstudio"><span class="header-section-number">1.2</span> Accessing RStudio</h2>
 <p>The best way to write R code is in the RStudio editor, which is a free product created by a company called Posit. You can either install R and RStudio on your computer, or access RStudio in web browser using a free Posit Cloud account</p>
-<section id="install-on-your-computer" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="install-on-your-computer"><span class="header-section-number">1.3.1</span> Install on your computer</h3>
+<section id="install-on-your-computer" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="install-on-your-computer"><span class="header-section-number">1.2.1</span> Install on your computer</h3>
 <p>To install R and RStudio on your computer, follow the instructions <a href="https://posit.co/download/rstudio-desktop/">here</a>. Be sure to install R first, and then install RStudio. You will never need to open the R installation because RStudio automatically finds your R installation.</p>
 </section>
-<section id="posit-cloud-web-browser" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="posit-cloud-web-browser"><span class="header-section-number">1.3.2</span> Posit Cloud (web browser)</h3>
-<p>Posit Cloud works in the browser with a free account. You can make an account and get started <a href="https://posit.cloud/">here</a>. This option is recommended for those who regularly use different computers and do not need the resources of a high-performance computer.</p>
+<section id="posit-cloud-web-browser" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="posit-cloud-web-browser"><span class="header-section-number">1.2.2</span> Posit Cloud (web browser)</h3>
+<p>Posit Cloud works in the browser with a free account. You can make an account and get started <a href="https://posit.cloud/">here</a>. This option is recommended for those who regularly use different computers for their work.</p>
+</section>
+</section>
+<section id="access-workshop-files" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="access-workshop-files"><span class="header-section-number">1.3</span> Access Workshop Files</h2>
+<section id="clone-from-github" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="clone-from-github"><span class="header-section-number">1.3.1</span> Clone from GitHub</h3>
+<ol type="1">
+<li>From the Terminal tab in RStudio in the bottom left panel, type these commands:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/SouthernMethodistUniversity/intro-to-r.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> intro-to-r/code/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li><p>Navigate to the <code>intro-to-r/code/</code> directory in the <code>Files</code> tab on the bottom left panel in RStudio</p></li>
+<li><p>Click on <code>More</code> &gt; <code>Set As Working Directory</code></p></li>
+</ol>
+</section>
+<section id="download-from-github" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="download-from-github"><span class="header-section-number">1.3.2</span> Download from GitHub</h3>
+<ol type="1">
+<li><p>Go to <a href="https://github.com/SouthernMethodistUniversity/intro-to-r/tree/main">github.com/SouthernMethodistUniversity/intro-to-r</a></p></li>
+<li><p>Download the folder by going to <code>Code</code> &gt; <code>Download ZIP</code></p></li>
+<li><p>Navigate to the <code>intro-to-r/code/</code> directory in the <code>Files</code> tab on the bottom left panel in RStudio</p></li>
+<li><p>Click on <code>More</code> &gt; <code>Set As Working Directory</code></p></li>
+</ol>
 
 
 </section>

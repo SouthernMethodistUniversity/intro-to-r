@@ -204,14 +204,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercise1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exercise #1</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Exercise #2</span></span></a>
+  <a href="./solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Solutions</span></a>
   </div>
 </li>
       </ul>
@@ -232,8 +226,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">4.1</span> Overview</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">4.2</span> Objectives</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">4.1</span> Objectives</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors"><span class="header-section-number">4.2</span> Vectors</a>
+  <ul class="collapse">
+  <li><a href="#subsetting" id="toc-subsetting" class="nav-link" data-scroll-target="#subsetting"><span class="header-section-number">4.2.1</span> Subsetting</a></li>
+  <li><a href="#factors" id="toc-factors" class="nav-link" data-scroll-target="#factors"><span class="header-section-number">4.2.2</span> Factors</a></li>
+  </ul></li>
+  <li><a href="#data-frames" id="toc-data-frames" class="nav-link" data-scroll-target="#data-frames"><span class="header-section-number">4.3</span> Data Frames</a>
+  <ul class="collapse">
+  <li><a href="#loading-and-saving" id="toc-loading-and-saving" class="nav-link" data-scroll-target="#loading-and-saving"><span class="header-section-number">4.3.1</span> Loading and Saving</a></li>
+  <li><a href="#subsetting-and-combining" id="toc-subsetting-and-combining" class="nav-link" data-scroll-target="#subsetting-and-combining"><span class="header-section-number">4.3.2</span> Subsetting and Combining</a></li>
+  </ul></li>
+  <li><a href="#matrices-and-arrays" id="toc-matrices-and-arrays" class="nav-link" data-scroll-target="#matrices-and-arrays"><span class="header-section-number">4.4</span> Matrices and Arrays</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">4.5</span> Lists</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/data_structures.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -259,11 +264,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">4.1</span> Overview</h2>
+<section id="objectives" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">4.1</span> Objectives</h2>
 </section>
-<section id="objectives" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="objectives"><span class="header-section-number">4.2</span> Objectives</h2>
+<section id="vectors" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="vectors"><span class="header-section-number">4.2</span> Vectors</h2>
+<section id="subsetting" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="subsetting"><span class="header-section-number">4.2.1</span> Subsetting</h3>
+</section>
+<section id="factors" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="factors"><span class="header-section-number">4.2.2</span> Factors</h3>
+</section>
+</section>
+<section id="data-frames" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="data-frames"><span class="header-section-number">4.3</span> Data Frames</h2>
+<section id="loading-and-saving" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="loading-and-saving"><span class="header-section-number">4.3.1</span> Loading and Saving</h3>
+</section>
+<section id="subsetting-and-combining" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="subsetting-and-combining"><span class="header-section-number">4.3.2</span> Subsetting and Combining</h3>
+</section>
+</section>
+<section id="matrices-and-arrays" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="matrices-and-arrays"><span class="header-section-number">4.4</span> Matrices and Arrays</h2>
+</section>
+<section id="lists" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="lists"><span class="header-section-number">4.5</span> Lists</h2>
 
 
 </section>
