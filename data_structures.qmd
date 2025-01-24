@@ -1,5 +1,19 @@
 # Data Structures
 
-## Overview
-
 ## Objectives
+
+## Vectors
+
+### Subsetting
+
+### Factors
+
+## Data Frames
+
+### Loading and Saving
+
+### Subsetting and Combining
+
+## Matrices and Arrays
+
+## Lists

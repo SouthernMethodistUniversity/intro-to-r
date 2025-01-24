@@ -33,8 +33,7 @@ book:
         - loops.qmd
     - part: handson.qmd
       chapters: 
-        - exercise1.qmd
-        - exercise2.qmd
+        - solutions.qmd
     - next_steps.qmd
 
 format:
@@ -44,4 +43,4 @@ format:
     author-meta: "SMU OIT Research Technology Services"
     callout-appearance: simple
 
-editor: visual
+editor: source

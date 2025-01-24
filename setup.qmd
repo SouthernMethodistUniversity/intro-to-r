@@ -1,13 +1,8 @@
 # Setup
 
-## Overview
-
-- **Teaching:** 5 minutes
-- **Exercises:** 2 minutes
-
 ## Objectives
 
-- To get your RStudio environment set up
+-   Get your RStudio environment set up
 
 ## Accessing RStudio
 
@@ -19,4 +14,29 @@ To install R and RStudio on your computer, follow the instructions [here](https:
 
 ### Posit Cloud (web browser)
 
-Posit Cloud works in the browser with a free account. You can make an account and get started [here](https://posit.cloud/). This option is recommended for those who regularly use different computers and do not need the resources of a high-performance computer.
+Posit Cloud works in the browser with a free account. You can make an account and get started [here](https://posit.cloud/). This option is recommended for those who regularly use different computers for their work.
+
+## Access Workshop Files
+
+### Clone from GitHub
+
+1. From the Terminal tab in RStudio in the bottom left panel, type these commands:
+
+```{.bash}
+git clone https://github.com/SouthernMethodistUniversity/intro-to-r.git
+cd intro-to-r/code/
+```
+
+2. Navigate to the `intro-to-r/code/` directory in the `Files` tab on the bottom left panel in RStudio
+
+3. Click on `More` > `Set As Working Directory`
+
+### Download from GitHub
+
+1.  Go to [github.com/SouthernMethodistUniversity/intro-to-r](https://github.com/SouthernMethodistUniversity/intro-to-r/tree/main)
+
+2.  Download the folder by going to `Code` \> `Download ZIP`
+
+3. Navigate to the `intro-to-r/code/` directory in the `Files` tab on the bottom left panel in RStudio
+
+4. Click on `More` > `Set As Working Directory`
