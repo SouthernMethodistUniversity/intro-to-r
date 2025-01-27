@@ -16,9 +16,21 @@ To install R and RStudio on your computer, follow the instructions [here](https:
 
 Posit Cloud works in the browser with a free account. You can make an account and get started [here](https://posit.cloud/). This option is recommended for those who regularly use different computers for their work.
 
-## Access Workshop Files
+## Accessing Code Files
 
-### Clone from GitHub
+It is recommended that you follow along by typing out code or copying and pasting from this workshop site, but some may want the full code files for reference. Below are instructions for multiple ways to get those.
+
+### Section by Section
+
+Each section of this workshop contains the code for that page under `Code Links` in the right sidebar. When you click on the file name, it will download the file to your computer for use.
+
+### GitHub
+
+All of the code files are available in this [GitHub repository](https://github.com/SouthernMethodistUniversity/intro-to-r).
+
+::: {.panel-tabset}
+
+## Clone
 
 1. From the Terminal tab in RStudio in the bottom left panel, type these commands:
 
@@ -31,7 +43,7 @@ cd intro-to-r/code/
 
 3. Click on `More` > `Set As Working Directory`
 
-### Download from GitHub
+## Download
 
 1.  Go to [github.com/SouthernMethodistUniversity/intro-to-r](https://github.com/SouthernMethodistUniversity/intro-to-r/tree/main)
 
@@ -40,3 +52,7 @@ cd intro-to-r/code/
 3. Navigate to the `intro-to-r/code/` directory in the `Files` tab on the bottom left panel in RStudio
 
 4. Click on `More` > `Set As Working Directory`
+
+:::
+
+
