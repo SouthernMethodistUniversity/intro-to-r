@@ -1,12 +1,11 @@
 ---
 code-links:
-  - text: 01_Basics.R
-    href: code/01_Basics.R
+  - text: 02_Basics.R
+    icon: file-code
+    href: code/02_Basics.R
 ---
 
 # Basics
-
-Code file for this section: [01_Basics.R](code/01_Basics.R)
 
 ## Objectives
 
