@@ -2,9 +2,9 @@
 format:
   html:
     code-links:
-      - text: Code for this Section
+      - text: R Code
         icon: file-code
-        href: data-import.py
+        href: code/01_Basics.R
 ---
 
 # Basics
@@ -15,10 +15,6 @@ format:
 -   Learn to use R as a calculator
 -   Learn how to create variables
 -   Get introduced to functions
-
-## Code File
-
-All code from this section can be found in [`01_Basics.R`](code/01_Basics.R)
 
 ## Using RStudio
 
