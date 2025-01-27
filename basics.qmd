@@ -2,7 +2,7 @@
 format:
   html:
     code-links:
-      - text: R Code
+      - text: 01_Basics.R
         icon: file-code
         href: code/01_Basics.R
 ---
