@@ -25,6 +25,9 @@ jobs:
 
       - name: Render Quarto Project
         run: quarto render
+        
+      - name: Copy Code Files to Deployment Directory
+        run: cp -r code _book/code
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

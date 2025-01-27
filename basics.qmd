@@ -4,7 +4,7 @@ format:
     code-links:
       - text: 01_Basics.R
         icon: file-code
-        href: ../code/01_Basics.R
+        download: code/01_Basics.R
 ---
 
 # Basics
