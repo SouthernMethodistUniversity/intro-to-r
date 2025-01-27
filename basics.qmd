@@ -1,13 +1,8 @@
----
-format:
-  html:
-    code-links:
-      - text: 01_Basics.R
-        icon: file-code
-        download: code/01_Basics.R
----
-
 # Basics
+
+## Code
+
+All code chunks from this section: [01_Basics.R](code/01_Basics.R)
 
 ## Objectives
 
