@@ -2,7 +2,7 @@
 code-links:
   - text: 03_Data_Types.R
     icon: file-code
-    href: 03_Data_Types.R
+    href: code/03_Data_Types.R
 ---
 
 # Data Types
