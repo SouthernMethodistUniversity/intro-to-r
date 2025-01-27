@@ -1,8 +1,12 @@
+---
+code-links:
+  - text: 01_Basics.R
+    href: code/01_Basics.R
+---
+
 # Basics
 
-## Code
-
-All code chunks from this section: [01_Basics.R](code/01_Basics.R)
+Code file for this section: [01_Basics.R](code/01_Basics.R)
 
 ## Objectives
 
