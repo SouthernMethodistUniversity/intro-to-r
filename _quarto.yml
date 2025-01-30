@@ -28,9 +28,9 @@ book:
       chapters: 
         - data_types.qmd
         - data_structures.qmd
+        - functions.qmd
     - part: control.qmd
       chapters: 
-        - functions.qmd
         - ifelse.qmd
         - loops.qmd
     - part: handson.qmd
