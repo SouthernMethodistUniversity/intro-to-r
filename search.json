@@ -300,7 +300,7 @@
     "section": "",
     "text": "5.1 Objectives",
     "crumbs": [
-      "Control Structures",
+      "Objects",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
@@ -311,7 +311,7 @@
     "section": "5.2 Built-In Functions",
     "text": "5.2 Built-In Functions",
     "crumbs": [
-      "Control Structures",
+      "Objects",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
@@ -322,7 +322,7 @@
     "section": "5.3 Custom Functions",
     "text": "5.3 Custom Functions",
     "crumbs": [
-      "Control Structures",
+      "Objects",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
@@ -333,7 +333,7 @@
     "section": "5.4 Default Arguments",
     "text": "5.4 Default Arguments",
     "crumbs": [
-      "Control Structures",
+      "Objects",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
@@ -344,7 +344,7 @@
     "section": "5.5 Nested Functions",
     "text": "5.5 Nested Functions",
     "crumbs": [
-      "Control Structures",
+      "Objects",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
