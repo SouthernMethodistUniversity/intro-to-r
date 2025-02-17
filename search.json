@@ -521,11 +521,21 @@
     ]
   },
   {
+    "objectID": "intro.html#what-is-r",
+    "href": "intro.html#what-is-r",
+    "title": "Introduction",
+    "section": "",
+    "text": "R is a programming language and environment used for statistical computing and data visualization.\nIt was developed as a free and open-source alternative to the S programming language and is built primarily on C and Fortran, with some extensions in C++.\nR is widely used in data science, statistics, and research.\nIt provides powerful tools for data analysis, visualization, and modeling.\nR runs on Windows, Mac, and Linux, making it accessible across different operating systems.\nUsers can extend R by installing packages from CRAN (The Comprehensive R Archive Network), which provides thousands of add-ons for specialized analysis.\nR has an active community and many free resources for learning and troubleshooting.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
     "objectID": "intro.html#why-use-r",
     "href": "intro.html#why-use-r",
     "title": "Introduction",
     "section": "Why use R?",
-    "text": "Why use R?",
+    "text": "Why use R?\n\nR is a popular language used in statistics and data science.\nR has much more intuitive and extensible visualization libraries compared to other popular programming languages.\nPerfect for publishing reproducible research using Quarto.\nPerfect for creating dashboards using R Shiny.",
     "crumbs": [
       "Introduction"
     ]
