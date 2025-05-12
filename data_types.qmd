@@ -163,4 +163,23 @@ as.data.frame()
 
 ## Missing Values
 
+In R, a missing value is denoted by `NA`. Any variable can be set to be a missing value, and you can check if a variables is a missing value using the `is.na()` function. The real benefit of missing values is when they are used in data structures, which we will explore in the [next chapter](data_structures.qmd).
+
+```{r}
+x <- NA
+is.na(x)
+x <- 2
+is.na(x)
+x <- ""
+is.na(x)
+```
+
+Occasionally you may see `NaN`, which occurs when you divide by zero, for example. It stands for "Not a Number", and can function as an `NA`. However, an `NA` is not considered a `NaN` when using the `is.nan()` function, so be careful. 
+
+```{r}
+is.na(NaN)
+is.nan(NaN)
+is.na(NA)
+is.nan(NA)
+```
 

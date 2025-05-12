@@ -2,6 +2,10 @@
 
 ## Objectives
 
+- Learn how to construct vectors, data frames, matrices, arrays, and lists
+- Learn how each data structure relates to the others
+- Know when to use which data structure
+
 ## Vectors
 
 ### Subsetting

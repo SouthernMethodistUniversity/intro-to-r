@@ -34,15 +34,48 @@ In the bottom left panel of RStudio, under the `Console` tab, is where you will 
 
 ### Scripts
 
+In the top left panel of RStudio, you can open and edit files just like any other text editor. The primary file type you will use in R is a R script with the extension `.r` or `.R`. You can easily run lines from a script using `Cmd` + `Enter` on your keyboard or the `Run` button in the top right portion of this panel.
+
 ### Environment
 
 All variables you create will appear in the `Environment` panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved, but this is not guaranteed.
 
 ## Using R as a Calculator
 
+First, we will gain some experience using R for its most basic functionality, calculating!
+
 ### Basic Calculations
 
+You can add, subtract, divide, and multiply using the same symbols you would on a graphing calculator
+
+```{r}
+(1 + 1)/4
+(3*10)-5
+2^3
+```
+
 ### Boolean Comparisons
+
+You can evaluate boolean expressions, which return either `TRUE` or `FALSE`. The `>`, `<`, `>=`, `<=`, `==`, `&`, and `|` operators are all valid.
+
+```{r}
+1 == 1
+2 < 1
+```
+
+The `&` and `|` operators are the AND and OR logical operators. The `&` operator evaluates to `TRUE` only if both sides of an expression are `TRUE`.
+
+```{r}
+(1 == 1) & (2 < 1)
+(1 == 1) & (2 > 1)
+```
+
+The `|` operator evaluates to true if either side of an expression are `TRUE`.
+
+```{r}
+(1 == 1) | (2 < 1)
+(1 == 1) | (2 > 1)
+```
 
 ## Assigning Variables
 
@@ -67,4 +100,12 @@ z
 
 As you can see, the comment did not interfere with setting the variable `z`.
 
-## Functions
+## Intro to Functions
+
+A function is an object that takes arguments, processes them, and outputs whatever it calculated. R has a variety of built-in functions, but you can also build your own. We will dive deeper into how to build your own functions in [Chapter 5](functions.qmd). An example of a built-in function in R is the `exp()` function which takes 1 argument and places it as the exponent to $e$. For example, we can calculate $e^3 = 20.08554$ using:
+
+```{r}
+exp(3)
+```
+
+In this case, the argument is `3` and the return value is `20.08554`.
