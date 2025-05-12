@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="SMU OIT Research Technology Services">
 <title>2&nbsp; Basics – Introduction to R Workshop</title>
@@ -67,10 +67,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-a53843354d0a01be29ed5d2b623f8633.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -96,7 +96,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 </head>
 <body class="nav-sidebar floating">
 
@@ -262,7 +287,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
   <li><a href="#assigning-variables" id="toc-assigning-variables" class="nav-link" data-scroll-target="#assigning-variables"><span class="header-section-number">2.4</span> Assigning Variables</a></li>
   <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments"><span class="header-section-number">2.5</span> Comments</a></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><span class="header-section-number">2.6</span> Functions</a></li>
+  <li><a href="#intro-to-functions" id="toc-intro-to-functions" class="nav-link" data-scroll-target="#intro-to-functions"><span class="header-section-number">2.6</span> Intro to Functions</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/basics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="code/02_Basics.R"><i class="bi bi-file-code"></i>02_Basics.R</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -308,25 +333,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section><section id="scripts" class="level3" data-number="2.2.3"><h3 data-number="2.2.3" class="anchored" data-anchor-id="scripts">
 <span class="header-section-number">2.2.3</span> Scripts</h3>
+<p>In the top left panel of RStudio, you can open and edit files just like any other text editor. The primary file type you will use in R is a R script with the extension <code>.r</code> or <code>.R</code>. You can easily run lines from a script using <code>Cmd</code> + <code>Enter</code> on your keyboard or the <code>Run</code> button in the top right portion of this panel.</p>
 </section><section id="environment" class="level3" data-number="2.2.4"><h3 data-number="2.2.4" class="anchored" data-anchor-id="environment">
 <span class="header-section-number">2.2.4</span> Environment</h3>
 <p>All variables you create will appear in the <code>Environment</code> panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved, but this is not guaranteed.</p>
 </section></section><section id="using-r-as-a-calculator" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="using-r-as-a-calculator">
 <span class="header-section-number">2.3</span> Using R as a Calculator</h2>
+<p>First, we will gain some experience using R for its most basic functionality, calculating!</p>
 <section id="basic-calculations" class="level3" data-number="2.3.1"><h3 data-number="2.3.1" class="anchored" data-anchor-id="basic-calculations">
 <span class="header-section-number">2.3.1</span> Basic Calculations</h3>
+<p>You can add, subtract, divide, and multiply using the same symbols you would on a graphing calculator</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span><span class="op">)</span><span class="op">/</span><span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="fl">3</span><span class="op">*</span><span class="fl">10</span><span class="op">)</span><span class="op">-</span><span class="fl">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 25</code></pre>
+</div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">2</span><span class="op">^</span><span class="fl">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8</code></pre>
+</div>
+</div>
 </section><section id="boolean-comparisons" class="level3" data-number="2.3.2"><h3 data-number="2.3.2" class="anchored" data-anchor-id="boolean-comparisons">
 <span class="header-section-number">2.3.2</span> Boolean Comparisons</h3>
+<p>You can evaluate boolean expressions, which return either <code>TRUE</code> or <code>FALSE</code>. The <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code>, <code>&amp;</code>, and <code>|</code> operators are all valid.</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">==</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">2</span> <span class="op">&lt;</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p>The <code>&amp;</code> and <code>|</code> operators are the AND and OR logical operators. The <code>&amp;</code> operator evaluates to <code>TRUE</code> only if both sides of an expression are <code>TRUE</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="fl">1</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">&amp;</span> <span class="op">(</span><span class="fl">2</span> <span class="op">&lt;</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="fl">1</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">&amp;</span> <span class="op">(</span><span class="fl">2</span> <span class="op">&gt;</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p>The <code>|</code> operator evaluates to true if either side of an expression are <code>TRUE</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="fl">1</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">|</span> <span class="op">(</span><span class="fl">2</span> <span class="op">&lt;</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="fl">1</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">|</span> <span class="op">(</span><span class="fl">2</span> <span class="op">&gt;</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
 </section></section><section id="assigning-variables" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="assigning-variables">
 <span class="header-section-number">2.4</span> Assigning Variables</h2>
 <p>You can assign a variable in R using either the <code>&lt;-</code> or <code>=</code> operator. A variable is a name that stores an object. The only limitation to variable names is that you cannot start with a number. For the most part, the code in this workshop uses <code>&lt;-</code>, but you are welcome to use <code>=</code> if you prefer.</p>
 <div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">2</span></span>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">2</span></span>
 <span><span class="va">x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y</span> <span class="op">=</span> <span class="fl">2</span></span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y</span> <span class="op">=</span> <span class="fl">2</span></span>
 <span><span class="va">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
@@ -336,7 +411,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="header-section-number">2.5</span> Comments</h2>
 <p>As in most programming languages, you have the ability to add comments to your code. In R, the <code>#</code> symbol tells R to ignore everything after it. You can use comments to explain what is happening in your code so that you or someone else can read your really complex code a year later without too much effort. Comments are used throughout the code in this workshop to help you understand what each line does.</p>
 <div class="cell">
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># This is a comment</span></span>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># This is a comment</span></span>
 <span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fl">3</span> <span class="co"># This is also a comment</span></span>
 <span><span class="va">z</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -344,8 +419,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>As you can see, the comment did not interfere with setting the variable <code>z</code>.</p>
-</section><section id="functions" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="functions">
-<span class="header-section-number">2.6</span> Functions</h2>
+</section><section id="intro-to-functions" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="intro-to-functions">
+<span class="header-section-number">2.6</span> Intro to Functions</h2>
+<p>A function is an object that takes arguments, processes them, and outputs whatever it calculated. R has a variety of built-in functions, but you can also build your own. We will dive deeper into how to build your own functions in <a href="./functions.html">Chapter 5</a>. An example of a built-in function in R is the <code><a href="https://rdrr.io/r/base/Log.html">exp()</a></code> function which takes 1 argument and places it as the exponent to <span class="math inline">\(e\)</span>. For example, we can calculate <span class="math inline">\(e^3 = 20.08554\)</span> using:</p>
+<div class="cell">
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20.08554</code></pre>
+</div>
+</div>
+<p>In this case, the argument is <code>3</code> and the return value is <code>20.08554</code>.</p>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -430,8 +513,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -542,7 +623,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

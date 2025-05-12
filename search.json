@@ -30,6 +30,36 @@
     ]
   },
   {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What is R?",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#what-is-r",
+    "href": "intro.html#what-is-r",
+    "title": "Introduction",
+    "section": "",
+    "text": "R is a programming language and environment used for statistical computing and data visualization.\nIt was developed as a free and open-source alternative to the S programming language and is built primarily on C and Fortran, with some extensions in C++.\nR is widely used in data science, statistics, and research.\nIt provides powerful tools for data analysis, visualization, and modeling.\nR runs on Windows, Mac, and Linux, making it accessible across different operating systems.\nUsers can extend R by installing packages from CRAN (The Comprehensive R Archive Network), which provides thousands of add-ons for specialized analysis.\nR has an active community and many free resources for learning and troubleshooting.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#why-use-r",
+    "href": "intro.html#why-use-r",
+    "title": "Introduction",
+    "section": "Why use R?",
+    "text": "Why use R?\n\nR is a popular language used in statistics and data science.\nR has much more intuitive and extensible visualization libraries compared to other popular programming languages.\nPerfect for publishing reproducible research using Quarto.\nPerfect for creating dashboards using R Shiny.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
     "objectID": "setup.html",
     "href": "setup.html",
     "title": "1  Setup",
@@ -100,7 +130,7 @@
     "href": "basics.html#using-rstudio",
     "title": "\n2  Basics\n",
     "section": "\n2.2 Using RStudio",
-    "text": "2.2 Using RStudio\nRStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.\n\n2.2.1 File Explorer\nIn the bottom right panel of RStudio, under the Files tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your working directory. Your working directory is the base folder you want to operate in within an R session. Any file paths or items saved in your environment will use your working directory as its base.\nTo set your working directory, navigate to the folder you want to be your working directory, click one More, and then Set As Working Directory. You can always change this, and we will discuss the best way to make use of a working directory in the Projects section below.\n\n2.2.2 Console\nIn the bottom left panel of RStudio, under the Console tab, is where you will execute all of your R code. Each line of code is prompted by the &gt; symbol. You do not need to type in the &gt;, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the Enter key on your keyboard. Below is an example of how to add 2 numbers on the console.\n\n1 + 1\n\n[1] 2\n\n\n\n2.2.3 Scripts\n\n2.2.4 Environment\nAll variables you create will appear in the Environment panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved, but this is not guaranteed.",
+    "text": "2.2 Using RStudio\nRStudio provides a user-friendly interface to the R programming language. There are 4 main panels that we will go over in the following sections: the file explorer, the console, the script window, and the environment window. Additionally, we will explore how to setup an R project to make using R Studio more convenient.\n\n2.2.1 File Explorer\nIn the bottom right panel of RStudio, under the Files tab, you can navigate through the files on your computer. From this panel you can import datasets into R, access your R scripts, and set your working directory. Your working directory is the base folder you want to operate in within an R session. Any file paths or items saved in your environment will use your working directory as its base.\nTo set your working directory, navigate to the folder you want to be your working directory, click one More, and then Set As Working Directory. You can always change this, and we will discuss the best way to make use of a working directory in the Projects section below.\n\n2.2.2 Console\nIn the bottom left panel of RStudio, under the Console tab, is where you will execute all of your R code. Each line of code is prompted by the &gt; symbol. You do not need to type in the &gt;, it is simply to indicate a new line of code. To execute your code you will type out your code and hit the Enter key on your keyboard. Below is an example of how to add 2 numbers on the console.\n\n1 + 1\n\n[1] 2\n\n\n\n2.2.3 Scripts\nIn the top left panel of RStudio, you can open and edit files just like any other text editor. The primary file type you will use in R is a R script with the extension .r or .R. You can easily run lines from a script using Cmd + Enter on your keyboard or the Run button in the top right portion of this panel.\n\n2.2.4 Environment\nAll variables you create will appear in the Environment panel in the top right corner of RStudio. This includes everything from a single number to a large data frame. This allows you to keep track of what you are creating. Most of the time, when you open RStudio, the environment from your previous session in that working directory is saved, but this is not guaranteed.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -111,7 +141,7 @@
     "href": "basics.html#using-r-as-a-calculator",
     "title": "\n2  Basics\n",
     "section": "\n2.3 Using R as a Calculator",
-    "text": "2.3 Using R as a Calculator\n\n2.3.1 Basic Calculations\n\n2.3.2 Boolean Comparisons",
+    "text": "2.3 Using R as a Calculator\nFirst, we will gain some experience using R for its most basic functionality, calculating!\n\n2.3.1 Basic Calculations\nYou can add, subtract, divide, and multiply using the same symbols you would on a graphing calculator\n\n(1 + 1)/4\n\n[1] 0.5\n\n(3*10)-5\n\n[1] 25\n\n2^3\n\n[1] 8\n\n\n\n2.3.2 Boolean Comparisons\nYou can evaluate boolean expressions, which return either TRUE or FALSE. The &gt;, &lt;, &gt;=, &lt;=, ==, &, and | operators are all valid.\n\n1 == 1\n\n[1] TRUE\n\n2 &lt; 1\n\n[1] FALSE\n\n\nThe & and | operators are the AND and OR logical operators. The & operator evaluates to TRUE only if both sides of an expression are TRUE.\n\n(1 == 1) & (2 &lt; 1)\n\n[1] FALSE\n\n(1 == 1) & (2 &gt; 1)\n\n[1] TRUE\n\n\nThe | operator evaluates to true if either side of an expression are TRUE.\n\n(1 == 1) | (2 &lt; 1)\n\n[1] TRUE\n\n(1 == 1) | (2 &gt; 1)\n\n[1] TRUE",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
@@ -140,14 +170,24 @@
     ]
   },
   {
-    "objectID": "basics.html#functions",
-    "href": "basics.html#functions",
+    "objectID": "basics.html#intro-to-functions",
+    "href": "basics.html#intro-to-functions",
     "title": "\n2  Basics\n",
-    "section": "\n2.6 Functions",
-    "text": "2.6 Functions",
+    "section": "\n2.6 Intro to Functions",
+    "text": "2.6 Intro to Functions\nA function is an object that takes arguments, processes them, and outputs whatever it calculated. R has a variety of built-in functions, but you can also build your own. We will dive deeper into how to build your own functions in Chapter 5. An example of a built-in function in R is the exp() function which takes 1 argument and places it as the exponent to \\(e\\). For example, we can calculate \\(e^3 = 20.08554\\) using:\n\nexp(3)\n\n[1] 20.08554\n\n\nIn this case, the argument is 3 and the return value is 20.08554.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics</span>"
+    ]
+  },
+  {
+    "objectID": "objects.html",
+    "href": "objects.html",
+    "title": "Objects",
+    "section": "",
+    "text": "Almost everything you work with in R is an object. In the previous section you created a variable that holds a number, which is considered a numeric object. But, objects can be vectors, datasets, strings of words, or even functions!\nIn the next 2 sections you will learn about the different data types and structures of objects you can use in R. If you are ever in doubt about what an object is, there are plenty of ways to find out, which we will also cover in the following sections.",
+    "crumbs": [
+      "Objects"
     ]
   },
   {
@@ -232,7 +272,7 @@
     "href": "data_types.html#missing-values",
     "title": "\n3  Data Types\n",
     "section": "\n3.7 Missing Values",
-    "text": "3.7 Missing Values",
+    "text": "3.7 Missing Values\nIn R, a missing value is denoted by NA. Any variable can be set to be a missing value, and you can check if a variables is a missing value using the is.na() function. The real benefit of missing values is when they are used in data structures, which we will explore in the next chapter.\n\nx &lt;- NA\nis.na(x)\n\n[1] TRUE\n\nx &lt;- 2\nis.na(x)\n\n[1] FALSE\n\nx &lt;- \"\"\nis.na(x)\n\n[1] FALSE\n\n\nOccasionally you may see NaN, which occurs when you divide by zero, for example. It stands for “Not a Number”, and can function as an NA. However, an NA is not considered a NaN when using the is.nan() function, so be careful.\n\nis.na(NaN)\n\n[1] TRUE\n\nis.nan(NaN)\n\n[1] TRUE\n\nis.na(NA)\n\n[1] TRUE\n\nis.nan(NA)\n\n[1] FALSE",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Types</span>"
@@ -244,6 +284,17 @@
     "title": "4  Data Structures",
     "section": "",
     "text": "4.1 Objectives",
+    "crumbs": [
+      "Objects",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
+    ]
+  },
+  {
+    "objectID": "data_structures.html#objectives",
+    "href": "data_structures.html#objectives",
+    "title": "4  Data Structures",
+    "section": "",
+    "text": "Learn how to construct vectors, data frames, matrices, arrays, and lists\nLearn how each data structure relates to the others\nKnow when to use which data structure",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
@@ -448,6 +499,26 @@
     ]
   },
   {
+    "objectID": "handson.html",
+    "href": "handson.html",
+    "title": "Hands-On Exercises",
+    "section": "",
+    "text": "Exercise #1",
+    "crumbs": [
+      "Hands-On Exercises"
+    ]
+  },
+  {
+    "objectID": "handson.html#exercise-2",
+    "href": "handson.html#exercise-2",
+    "title": "Hands-On Exercises",
+    "section": "Exercise #2",
+    "text": "Exercise #2",
+    "crumbs": [
+      "Hands-On Exercises"
+    ]
+  },
+  {
     "objectID": "solutions.html",
     "href": "solutions.html",
     "title": "Solutions",
@@ -485,7 +556,7 @@
     "href": "next_steps.html",
     "title": "Next Steps",
     "section": "",
-    "text": "Workshops\nThe next two parts of this workshop series will take place at this time in the coming weeks.",
+    "text": "Workshops\nNow that you have mastered the basics of the R programming language, below are some resources to extend your learning.\nThe next two parts of this workshop series will take place at this time in the coming weeks.",
     "crumbs": [
       "Next Steps"
     ]
@@ -508,66 +579,6 @@
     "text": "Online Resources\n\nHands-On Programming in R by Garrett Grolemund\nAdvanced R by Hadley Wickham\nR for Data Science (2e) by Hadley Wickham et. al.",
     "crumbs": [
       "Next Steps"
-    ]
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "What is R?",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "intro.html#what-is-r",
-    "href": "intro.html#what-is-r",
-    "title": "Introduction",
-    "section": "",
-    "text": "R is a programming language and environment used for statistical computing and data visualization.\nIt was developed as a free and open-source alternative to the S programming language and is built primarily on C and Fortran, with some extensions in C++.\nR is widely used in data science, statistics, and research.\nIt provides powerful tools for data analysis, visualization, and modeling.\nR runs on Windows, Mac, and Linux, making it accessible across different operating systems.\nUsers can extend R by installing packages from CRAN (The Comprehensive R Archive Network), which provides thousands of add-ons for specialized analysis.\nR has an active community and many free resources for learning and troubleshooting.",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "intro.html#why-use-r",
-    "href": "intro.html#why-use-r",
-    "title": "Introduction",
-    "section": "Why use R?",
-    "text": "Why use R?\n\nR is a popular language used in statistics and data science.\nR has much more intuitive and extensible visualization libraries compared to other popular programming languages.\nPerfect for publishing reproducible research using Quarto.\nPerfect for creating dashboards using R Shiny.",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "objects.html",
-    "href": "objects.html",
-    "title": "Objects",
-    "section": "",
-    "text": "Almost everything you work with in R is an object. In the previous section you created a variable that holds a number, which is considered a numeric object. But, objects can be vectors, datasets, strings of words, or even functions!\nIn the next 2 sections you will learn about the different data types and structures of objects you can use in R. If you are ever in doubt about what an object is, there are plenty of ways to find out, which we will also cover in the following sections.",
-    "crumbs": [
-      "Objects"
-    ]
-  },
-  {
-    "objectID": "handson.html",
-    "href": "handson.html",
-    "title": "Hands-On Exercises",
-    "section": "",
-    "text": "Exercise #1",
-    "crumbs": [
-      "Hands-On Exercises"
-    ]
-  },
-  {
-    "objectID": "handson.html#exercise-2",
-    "href": "handson.html#exercise-2",
-    "title": "Hands-On Exercises",
-    "section": "Exercise #2",
-    "text": "Exercise #2",
-    "crumbs": [
-      "Hands-On Exercises"
     ]
   }
 ]
