@@ -444,6 +444,16 @@
     ]
   },
   {
+    "objectID": "control.html",
+    "href": "control.html",
+    "title": "Control Structures",
+    "section": "",
+    "text": "Control structures allow you to control the flow of your code in R. Instead of running line-by-line from top to bottom, control structures let your program make decisions and repeat tasks automatically.\nIn this section, you will learn how to write conditional statements using if, else, and else if, which allow your code to respond differently depending on conditions. You will also learn how to use loops, such as for and while, to repeat operations efficiently.\nTogether, conditionals and loops give you the ability to write dynamic, flexible programs. These tools are essential for tasks like cleaning data, automating analysis steps, applying rules to datasets, and building more complex functions.\nIn the next pages, you will practice making decisions in code and repeating operations in a controlled and readable way.",
+    "crumbs": [
+      "Control Structures"
+    ]
+  },
+  {
     "objectID": "ifelse.html",
     "href": "ifelse.html",
     "title": "6  If-Else Statements",
