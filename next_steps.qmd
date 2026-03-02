@@ -4,12 +4,10 @@ Now that you have mastered the basics of the R programming language, below are s
 
 ## Workshops
 
-The next two parts of this workshop series will take place at this time in the coming weeks.
+Please visit [LibCal](https://libcal.smu.edu/calendar?cid=15527&t=g&d=0000-00-00&cal=15527&cm=8175&inc=0) to register for additional R workshops. Topics include:
 
-| Workshop                          | Date          | Time      | Location |
-|-----------------------------------|---------------|-----------|----------|
-| Effective Data Visualization in R | February 26th | 1:30-3:30 | FLE 109  |
-| Data Science Workflow in R        | March 5th     | 1:30-3:30 | FLE 109  |
+- *Data Science Workflows in R*
+- *Effective Data Visualization in R*
 
 ## Online Resources
 
