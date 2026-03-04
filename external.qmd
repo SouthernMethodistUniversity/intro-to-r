@@ -1,6 +1,6 @@
-# External Libraries
+# External Packages
 
-## Using Packages for Statistical Analysis and Visualization
+## Installing Packages
 
 One of the biggest strengths of R is its large ecosystem of **packages** (also called libraries). Packages extend R by adding new functions for data analysis, statistics, visualization, and machine learning. Thousands of packages are available through the **Comprehensive R Archive Network (CRAN)**.
 
