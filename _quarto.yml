@@ -33,6 +33,9 @@ book:
       chapters: 
         - ifelse.qmd
         - loops.qmd
+    - part: beyond.qmd
+      chapters: 
+        - external.qmd
     - part: handson.qmd
       chapters: 
         - solutions.qmd
