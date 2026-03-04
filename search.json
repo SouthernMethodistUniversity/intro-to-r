@@ -598,56 +598,56 @@
   {
     "objectID": "external.html",
     "href": "external.html",
-    "title": "\n8  External Libraries\n",
+    "title": "\n8  External Packages\n",
     "section": "",
-    "text": "8.1 Using Packages for Statistical Analysis and Visualization\nOne of the biggest strengths of R is its large ecosystem of packages (also called libraries). Packages extend R by adding new functions for data analysis, statistics, visualization, and machine learning. Thousands of packages are available through the Comprehensive R Archive Network (CRAN).\nTo use a package, you first install it (one time) and then load it into your session.\nOnce loaded, the functions from the package become available for use.\nPackages are commonly used to:",
+    "text": "8.1 Installing Packages\nOne of the biggest strengths of R is its large ecosystem of packages (also called libraries). Packages extend R by adding new functions for data analysis, statistics, visualization, and machine learning. Thousands of packages are available through the Comprehensive R Archive Network (CRAN).\nTo use a package, you first install it (one time) and then load it into your session.\nOnce loaded, the functions from the package become available for use.\nPackages are commonly used to:",
     "crumbs": [
       "Beyond the Basics",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Libraries</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Packages</span>"
     ]
   },
   {
-    "objectID": "external.html#using-packages-for-statistical-analysis-and-visualization",
-    "href": "external.html#using-packages-for-statistical-analysis-and-visualization",
-    "title": "\n8  External Libraries\n",
+    "objectID": "external.html#installing-packages",
+    "href": "external.html#installing-packages",
+    "title": "\n8  External Packages\n",
     "section": "",
     "text": "install.packages(\"ggplot2\")\nlibrary(ggplot2)\n\n\n\nPerform statistical modeling\nManipulate and analyze datasets\nCreate high-quality visualizations\nExtend R with specialized tools",
     "crumbs": [
       "Beyond the Basics",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Libraries</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Packages</span>"
     ]
   },
   {
     "objectID": "external.html#built-in-statistical-functions",
     "href": "external.html#built-in-statistical-functions",
-    "title": "\n8  External Libraries\n",
+    "title": "\n8  External Packages\n",
     "section": "\n8.2 Built-in Statistical Functions",
     "text": "8.2 Built-in Statistical Functions\nR already includes many powerful statistical tools in its base and stats packages, which are loaded automatically when R starts.\nFor example, you can run statistical tests or fit models directly.\n\n8.2.1 Linear Regression\nThe lm() function fits a linear model.\n\nmodel &lt;- lm(mpg ~ wt, data = mtcars)\nsummary(model)\n\n\nCall:\nlm(formula = mpg ~ wt, data = mtcars)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-4.5432 -2.3647 -0.1252  1.4096  6.8727 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***\nwt           -5.3445     0.5591  -9.559 1.29e-10 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 3.046 on 30 degrees of freedom\nMultiple R-squared:  0.7528,    Adjusted R-squared:  0.7446 \nF-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10\n\n\nThis model estimates how vehicle weight (wt) affects fuel efficiency (mpg).\n\n8.2.2 t-tests\nYou can also perform hypothesis testing using functions such as t.test().\nExample: Compare the mean miles-per-gallon for cars with different transmission types.\n\nt.test(mpg ~ am, data = mtcars)\n\n\n    Welch Two Sample t-test\n\ndata:  mpg by am\nt = -3.7671, df = 18.332, p-value = 0.001374\nalternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0\n95 percent confidence interval:\n -11.280194  -3.209684\nsample estimates:\nmean in group 0 mean in group 1 \n       17.14737        24.39231 \n\n\nThese built-in statistical tools make R a powerful environment for quantitative analysis.",
     "crumbs": [
       "Beyond the Basics",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Libraries</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Packages</span>"
     ]
   },
   {
     "objectID": "external.html#example-creating-visualizations-with-ggplot2",
     "href": "external.html#example-creating-visualizations-with-ggplot2",
-    "title": "\n8  External Libraries\n",
+    "title": "\n8  External Packages\n",
     "section": "\n8.3 Example: Creating Visualizations with ggplot2",
     "text": "8.3 Example: Creating Visualizations with ggplot2\nThe ggplot2 package is one of the most widely used tools for creating data visualizations in R. It implements the Grammar of Graphics, which builds plots layer by layer.\nFor example, we can visualize the relationship between engine weight and fuel efficiency using the built-in mtcars dataset.\n\nlibrary(ggplot2)\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point()\n\n\n\n\n\n\n\nThis creates a scatter plot where:\n\n\nwt (vehicle weight) is on the x-axis\n\nmpg (miles per gallon) is on the y-axis\n\nAdditional layers can be added to customize the plot.\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Fuel Efficiency vs Vehicle Weight\",\n    x = \"Weight\",\n    y = \"Miles per Gallon\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'",
     "crumbs": [
       "Beyond the Basics",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Libraries</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Packages</span>"
     ]
   },
   {
     "objectID": "external.html#looking-ahead",
     "href": "external.html#looking-ahead",
-    "title": "\n8  External Libraries\n",
+    "title": "\n8  External Packages\n",
     "section": "\n8.4 Looking Ahead",
     "text": "8.4 Looking Ahead\nWhile base R already includes powerful statistical tools, many analysts extend their workflows with additional packages. Some commonly used packages include:\n\n\nggplot2 – data visualization\n\n\ndplyr – data manipulation\n\n\ntidyr – reshaping data\n\nTogether these packages form part of the tidyverse, a widely used ecosystem for data science in R.\nIn more advanced courses and projects, you will learn how to combine statistical modeling, visualization, and data manipulation to build complete data analysis workflows.",
     "crumbs": [
       "Beyond the Basics",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Libraries</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>External Packages</span>"
     ]
   },
   {
