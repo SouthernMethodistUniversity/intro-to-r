@@ -181,8 +181,6 @@ my_list[[1]]    # returns element
 my_list$name
 ```
 
----
-
 ## Summary: When to Use What
 
 | Structure | Same Type? | Dimensions | Use Case |
