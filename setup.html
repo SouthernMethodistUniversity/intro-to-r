@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -287,11 +252,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#install-on-your-computer" id="toc-install-on-your-computer" class="nav-link" data-scroll-target="#install-on-your-computer"><span class="header-section-number">1.2.1</span> Install on your computer</a></li>
   <li><a href="#posit-cloud-web-browser" id="toc-posit-cloud-web-browser" class="nav-link" data-scroll-target="#posit-cloud-web-browser"><span class="header-section-number">1.2.2</span> Posit Cloud (web browser)</a></li>
   </ul></li>
-  <li><a href="#accessing-code-files" id="toc-accessing-code-files" class="nav-link" data-scroll-target="#accessing-code-files"><span class="header-section-number">1.3</span> Accessing Code Files</a>
-  <ul class="collapse">
-  <li><a href="#section-by-section" id="toc-section-by-section" class="nav-link" data-scroll-target="#section-by-section"><span class="header-section-number">1.3.1</span> Section by Section</a></li>
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">1.3.2</span> GitHub</a></li>
-  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SouthernMethodistUniversity/intro-to-r/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -333,42 +293,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="posit-cloud-web-browser" class="level3" data-number="1.2.2">
 <h3 data-number="1.2.2" class="anchored" data-anchor-id="posit-cloud-web-browser"><span class="header-section-number">1.2.2</span> Posit Cloud (web browser)</h3>
 <p>Posit Cloud works in the browser with a free account. You can make an account and get started <a href="https://posit.cloud/">here</a>. This option is recommended for those who regularly use different computers for their work.</p>
-</section>
-</section>
-<section id="accessing-code-files" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="accessing-code-files"><span class="header-section-number">1.3</span> Accessing Code Files</h2>
-<p>It is recommended that you follow along by typing out code or copying and pasting from this workshop site, but some may want the full code files for reference. Below are instructions for multiple ways to get those.</p>
-<section id="section-by-section" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="section-by-section"><span class="header-section-number">1.3.1</span> Section by Section</h3>
-<p>Each section of this workshop contains the code for that page under <code>Code Links</code> in the right sidebar. When you click on the file name, it will download the file to your computer for use.</p>
-</section>
-<section id="github" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="github"><span class="header-section-number">1.3.2</span> GitHub</h3>
-<p>All of the code files are available in this <a href="https://github.com/SouthernMethodistUniversity/intro-to-r">GitHub repository</a>.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Clone</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Download</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ol type="1">
-<li>From the Terminal tab in RStudio in the bottom left panel, type these commands:</li>
-</ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/SouthernMethodistUniversity/intro-to-r.git</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> intro-to-r/code/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ol start="2" type="1">
-<li><p>Navigate to the <code>intro-to-r/code/</code> directory in the <code>Files</code> tab on the bottom left panel in RStudio</p></li>
-<li><p>Click on <code>More</code> &gt; <code>Set As Working Directory</code></p></li>
-</ol>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ol type="1">
-<li><p>Go to <a href="https://github.com/SouthernMethodistUniversity/intro-to-r/tree/main">github.com/SouthernMethodistUniversity/intro-to-r</a></p></li>
-<li><p>Download the folder by going to <code>Code</code> &gt; <code>Download ZIP</code></p></li>
-<li><p>Navigate to the <code>intro-to-r/code/</code> directory in the <code>Files</code> tab on the bottom left panel in RStudio</p></li>
-<li><p>Click on <code>More</code> &gt; <code>Set As Working Directory</code></p></li>
-</ol>
-</div>
-</div>
-</div>
 
 
 </section>
