@@ -445,7 +445,7 @@
   {
     "objectID": "ifelse.html",
     "href": "ifelse.html",
-    "title": "6  If-Else Statements",
+    "title": "\n6  If-Else Statements\n",
     "section": "",
     "text": "6.1 Objectives",
     "crumbs": [
@@ -456,9 +456,9 @@
   {
     "objectID": "ifelse.html#objectives",
     "href": "ifelse.html#objectives",
-    "title": "6  If-Else Statements",
+    "title": "\n6  If-Else Statements\n",
     "section": "",
-    "text": "Write conditional statements using if\nUse if...else and else if\nApply vectorized logic using ifelse()\nUnderstand when to use each structure",
+    "text": "Write conditional statements using if\n\nUse if...else and else if\n\nApply vectorized logic using ifelse()\n\nUnderstand when to use each structure",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
@@ -467,9 +467,9 @@
   {
     "objectID": "ifelse.html#if-statements",
     "href": "ifelse.html#if-statements",
-    "title": "6  If-Else Statements",
-    "section": "6.2 If Statements",
-    "text": "6.2 If Statements\nBasic syntax:\nif (condition){\n  # do task\n}\nExample:\na &lt;- 5\n\nif (a &gt; 3){\n  print(\"a is bigger than 3\")\n}\nThe code inside the braces runs only if the condition is TRUE.",
+    "title": "\n6  If-Else Statements\n",
+    "section": "\n6.2 If Statements",
+    "text": "6.2 If Statements\nBasic syntax:\nif (condition){\n  # do task\n}\nExample:\n\na &lt;- 5\n\nif (a &gt; 3){\n  print(\"a is bigger than 3\")\n}\n\n[1] \"a is bigger than 3\"\n\n\nThe code inside the braces runs only if the condition is TRUE.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
@@ -478,9 +478,9 @@
   {
     "objectID": "ifelse.html#else-statements",
     "href": "ifelse.html#else-statements",
-    "title": "6  If-Else Statements",
-    "section": "6.3 Else Statements",
-    "text": "6.3 Else Statements\nUse else to define what happens when the condition is FALSE.\na &lt;- 5\n\nif (a &gt; 3){\n  print(\"a is bigger than 3\")\n} else {\n  print(\"a is NOT bigger than 3\")\n}\nOnly one block will execute.",
+    "title": "\n6  If-Else Statements\n",
+    "section": "\n6.3 Else Statements",
+    "text": "6.3 Else Statements\nUse else to define what happens when the condition is FALSE.\n\na &lt;- 5\n\nif (a &gt; 3){\n  print(\"a is bigger than 3\")\n} else {\n  print(\"a is NOT bigger than 3\")\n}\n\n[1] \"a is bigger than 3\"\n\n\nOnly one block will execute.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
@@ -489,9 +489,9 @@
   {
     "objectID": "ifelse.html#else-if-statements",
     "href": "ifelse.html#else-if-statements",
-    "title": "6  If-Else Statements",
-    "section": "6.4 Else-If Statements",
-    "text": "6.4 Else-If Statements\nUse else if to test multiple conditions.\na &lt;- 5\n\nif (a &gt; 3){\n  print(\"a is bigger than 3\")\n} else if (a == 3) {\n  print(\"a equals 3\")\n} else {\n  print(\"a is less than 3\")\n}\nR checks conditions from top to bottom and stops when one is TRUE.",
+    "title": "\n6  If-Else Statements\n",
+    "section": "\n6.4 Else-If Statements",
+    "text": "6.4 Else-If Statements\nUse else if to test multiple conditions.\n\na &lt;- 5\n\nif (a &gt; 3){\n  print(\"a is bigger than 3\")\n} else if (a == 3) {\n  print(\"a equals 3\")\n} else {\n  print(\"a is less than 3\")\n}\n\n[1] \"a is bigger than 3\"\n\n\nR checks conditions from top to bottom and stops when one is TRUE.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
@@ -500,9 +500,9 @@
   {
     "objectID": "ifelse.html#the-ifelse-function",
     "href": "ifelse.html#the-ifelse-function",
-    "title": "6  If-Else Statements",
-    "section": "6.5 The ifelse() Function",
-    "text": "6.5 The ifelse() Function\nifelse() is a vectorized version of if.\nSyntax:\nifelse(condition, value_if_true, value_if_false)\nExample:\na &lt;- 5\n\nifelse(a &gt; 3,\n       \"a is bigger than 3\",\n       \"a is not bigger than 3\")\nUnlike if, ifelse() works well on vectors:\nx &lt;- 1:5\nifelse(x &gt; 3, \"big\", \"small\")\nUse ifelse() when working with vectors or data frame columns.",
+    "title": "\n6  If-Else Statements\n",
+    "section": "\n6.5 The ifelse() Function",
+    "text": "6.5 The ifelse() Function\nifelse() is a vectorized version of if.\nSyntax:\nifelse(condition, value_if_true, value_if_false)\nExample:\n\na &lt;- 5\n\nifelse(a &gt; 3,\n       \"a is bigger than 3\",\n       \"a is not bigger than 3\")\n\n[1] \"a is bigger than 3\"\n\n\nUnlike if, ifelse() works well on vectors:\n\nx &lt;- 1:5\nifelse(x &gt; 3, \"big\", \"small\")\n\n[1] \"small\" \"small\" \"small\" \"big\"   \"big\"  \n\n\nUse ifelse() when working with vectors or data frame columns.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>If-Else Statements</span>"
@@ -511,7 +511,7 @@
   {
     "objectID": "loops.html",
     "href": "loops.html",
-    "title": "7  Loops",
+    "title": "\n7  Loops\n",
     "section": "",
     "text": "7.1 Objectives",
     "crumbs": [
@@ -522,7 +522,7 @@
   {
     "objectID": "loops.html#objectives",
     "href": "loops.html#objectives",
-    "title": "7  Loops",
+    "title": "\n7  Loops\n",
     "section": "",
     "text": "Write and understand for loops\nWrite and understand while loops\nUse apply family functions as loop alternatives\nApply functions over lists and matrices\nUnderstand apply, lapply, sapply, mapply, and tapply",
     "crumbs": [
@@ -533,9 +533,9 @@
   {
     "objectID": "loops.html#for-loops",
     "href": "loops.html#for-loops",
-    "title": "7  Loops",
-    "section": "7.2 For Loops",
-    "text": "7.2 For Loops\nFull syntax:\nfor (iterator in sequence){\n  # do task\n}\nExample:\nfor (i in 1:5){\n  print(i)\n}\nUsing seq():\nfor (i in seq(1, 5)){\n  print(letters[i])\n}\nShort form:\nfor (i in 1:5) print(i)\nUse for loops when you know how many iterations you need.",
+    "title": "\n7  Loops\n",
+    "section": "\n7.2 For Loops",
+    "text": "7.2 For Loops\nFull syntax:\nfor (iterator in sequence){\n  # do task\n}\nExample:\n\nfor (i in 1:5){\n  print(i)\n}\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n[1] 5\n\n\nUsing seq():\n\nfor (i in seq(1, 5)){\n  print(letters[i])\n}\n\n[1] \"a\"\n[1] \"b\"\n[1] \"c\"\n[1] \"d\"\n[1] \"e\"\n\n\nShort form:\n\nfor (i in 1:5) print(i)\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n[1] 5\n\n\nUse for loops when you know how many iterations you need.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
@@ -544,9 +544,9 @@
   {
     "objectID": "loops.html#while-loops",
     "href": "loops.html#while-loops",
-    "title": "7  Loops",
-    "section": "7.3 While Loops",
-    "text": "7.3 While Loops\nSyntax:\nwhile (condition){\n  # do task\n}\nExample:\na &lt;- 1\n\nwhile (a &lt; 5){\n  print(a)\n  a &lt;- a + 1\n}\nThe loop continues as long as the condition is TRUE.\nBe careful: if the condition never becomes FALSE, the loop runs forever.",
+    "title": "\n7  Loops\n",
+    "section": "\n7.3 While Loops",
+    "text": "7.3 While Loops\nSyntax:\nwhile (condition){\n  # do task\n}\nExample:\n\na &lt;- 1\n\nwhile (a &lt; 5){\n  print(a)\n  a &lt;- a + 1\n}\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n\n\nThe loop continues as long as the condition is TRUE.\nBe careful: if the condition never becomes FALSE, the loop runs forever.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
@@ -555,9 +555,9 @@
   {
     "objectID": "loops.html#apply-functions",
     "href": "loops.html#apply-functions",
-    "title": "7  Loops",
-    "section": "7.4 Apply Functions",
-    "text": "7.4 Apply Functions\nThe apply family provides cleaner alternatives to explicit loops.\nThere are functions in R that make looping easier:\n\napply() – apply a function over margins of an array\n\nlapply() – loop over a list and return a list\n\nsapply() – simplified version of lapply()\n\nmapply() – multivariate version of lapply()\n\ntapply() – apply a function over subsets of a vector\n\n\n7.4.1 apply()\nMost often used to apply a function to rows or columns of a matrix.\nm &lt;- matrix(1:12, 3, 4)\nprint(m)\n\napply(m, 1, sum)  # row sums\napply(m, 2, sum)  # column sums\nSyntax:\napply(X, MARGIN, FUN)\n\nX = matrix or array\n\nMARGIN = 1 (rows) or 2 (columns)\n\nFUN = function to apply\n\nSimilar built-in matrix functions:\nrowSums(m)\ncolSums(m)\nrowMeans(m)\ncolMeans(m)\nNote: apply() is not necessarily faster than loops, but it simplifies code.\n\n\n7.4.2 lapply() and sapply()\nl = long (returns list)\ns = short (simplifies output)\nlist1 &lt;- list(\n  l1 = seq(1, 10),\n  l2 = 20:29,\n  l3 = rnorm(4)\n)\n\nlapply(list1, mean)\nsapply(list1, mean)\n\nlapply() always returns a list\n\nsapply() tries to simplify the result (vector or matrix)\n\n\n\n7.4.3 mapply()\nMultivariate version of lapply().\nmapply(sum, 1:3, 4:6)\nApplies a function to multiple arguments element-wise.\n\n\n7.4.4 tapply()\nApplies a function over subsets of a vector.\nx &lt;- 1:10\ngroup &lt;- rep(c(\"A\", \"B\"), each = 5)\n\ntapply(x, group, mean)\nUseful for grouped summaries.",
+    "title": "\n7  Loops\n",
+    "section": "\n7.4 Apply Functions",
+    "text": "7.4 Apply Functions\nThe apply family provides cleaner alternatives to explicit loops.\nThere are functions in R that make looping easier:\n\n\napply() – apply a function over margins of an array\n\n\nlapply() – loop over a list and return a list\n\n\nsapply() – simplified version of lapply()\n\n\nmapply() – multivariate version of lapply()\n\n\ntapply() – apply a function over subsets of a vector\n\n\n7.4.1 apply()\nMost often used to apply a function to rows or columns of a matrix.\n\nm &lt;- matrix(1:12, 3, 4)\nprint(m)\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12\n\napply(m, 1, sum)  # row sums\n\n[1] 22 26 30\n\napply(m, 2, sum)  # column sums\n\n[1]  6 15 24 33\n\n\nSyntax:\napply(X, MARGIN, FUN)\n\n\nX = matrix or array\n\n\nMARGIN = 1 (rows) or 2 (columns)\n\n\nFUN = function to apply\n\nSimilar built-in matrix functions:\n\nrowSums(m)\n\n[1] 22 26 30\n\ncolSums(m)\n\n[1]  6 15 24 33\n\nrowMeans(m)\n\n[1] 5.5 6.5 7.5\n\ncolMeans(m)\n\n[1]  2  5  8 11\n\n\nNote: apply() is not necessarily faster than loops, but it simplifies code.\n\n7.4.2 lapply() and sapply()\nl = long (returns list)\ns = short (simplifies output)\n\nlist1 &lt;- list(\n  l1 = seq(1, 10),\n  l2 = 20:29,\n  l3 = rnorm(4)\n)\n\nlapply(list1, mean)\n\n$l1\n[1] 5.5\n\n$l2\n[1] 24.5\n\n$l3\n[1] 0.2157508\n\nsapply(list1, mean)\n\n        l1         l2         l3 \n 5.5000000 24.5000000  0.2157508 \n\n\n\n\nlapply() always returns a list\n\n\nsapply() tries to simplify the result (vector or matrix)\n\n7.4.3 mapply()\nMultivariate version of lapply().\n\nmapply(sum, 1:3, 4:6)\n\n[1] 5 7 9\n\n\nApplies a function to multiple arguments element-wise.\n\n7.4.4 tapply()\nApplies a function over subsets of a vector.\n\nx &lt;- 1:10\ngroup &lt;- rep(c(\"A\", \"B\"), each = 5)\n\ntapply(x, group, mean)\n\nA B \n3 8 \n\n\nUseful for grouped summaries.",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
@@ -566,9 +566,9 @@
   {
     "objectID": "loops.html#key-points",
     "href": "loops.html#key-points",
-    "title": "7  Loops",
-    "section": "7.5 Key Points",
-    "text": "7.5 Key Points\n\nUse for and while for explicit iteration\n\nUse apply family functions for cleaner, more readable code\n\nlapply() returns lists\n\nsapply() simplifies output\n\napply() works well on matrices",
+    "title": "\n7  Loops\n",
+    "section": "\n7.5 Key Points",
+    "text": "7.5 Key Points\n\nUse for and while for explicit iteration\n\nUse apply family functions for cleaner, more readable code\n\n\nlapply() returns lists\n\n\nsapply() simplifies output\n\n\napply() works well on matrices",
     "crumbs": [
       "Control Structures",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Loops</span>"
