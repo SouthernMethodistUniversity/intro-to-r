@@ -270,7 +270,7 @@
   {
     "objectID": "data_structures.html",
     "href": "data_structures.html",
-    "title": "4  Data Structures",
+    "title": "\n4  Data Structures\n",
     "section": "",
     "text": "4.1 Objectives",
     "crumbs": [
@@ -281,7 +281,7 @@
   {
     "objectID": "data_structures.html#objectives",
     "href": "data_structures.html#objectives",
-    "title": "4  Data Structures",
+    "title": "\n4  Data Structures\n",
     "section": "",
     "text": "Learn how to construct vectors, data frames, matrices, arrays, and lists\nLearn how each data structure relates to the others\nSubset and modify objects\n\nKnow when to use each structure",
     "crumbs": [
@@ -292,9 +292,9 @@
   {
     "objectID": "data_structures.html#vectors",
     "href": "data_structures.html#vectors",
-    "title": "4  Data Structures",
-    "section": "4.2 Vectors",
-    "text": "4.2 Vectors\nVectors are the basic building block of R.\nThey contain elements of the same type.\n# Character\nx &lt;- c(\"a\", \"b\", \"c\")\n\n# Numeric (default number type)\ny &lt;- c(1, 2, 3)\n\n# Integer\nz &lt;- c(1L, 2L, 3L)\n\n# Logical\nw &lt;- c(TRUE, FALSE, TRUE)\n\nclass(y)\n\n4.2.1 Subsetting\nUse brackets [].\nx &lt;- c(\"a\", \"b\", \"c\", \"d\")\n\nx[1]        # first element\nx[2:4]      # range\nx[c(1,4)]   # multiple positions\nLogical subsetting:\ny &lt;- 1:5\ny[y &gt; 3]\nReplace values:\ny[y &gt; 3] &lt;- 0\ny\n\n\n4.2.2 Factors\nFactors represent categorical data.\nnames &lt;- c(\"John\", \"Mary\", \"John\", \"Mary\")\nf &lt;- factor(names)\n\nf\nlevels(f)\ntable(f)",
+    "title": "\n4  Data Structures\n",
+    "section": "\n4.2 Vectors",
+    "text": "4.2 Vectors\nVectors are the basic building block of R.\nThey contain elements of the same type.\n\n# Character\nx &lt;- c(\"a\", \"b\", \"c\")\n\n# Numeric (default number type)\ny &lt;- c(1, 2, 3)\n\n# Integer\nz &lt;- c(1L, 2L, 3L)\n\n# Logical\nw &lt;- c(TRUE, FALSE, TRUE)\n\nclass(y)\n\n[1] \"numeric\"\n\n\n\n4.2.1 Subsetting\nUse brackets [].\n\nx &lt;- c(\"a\", \"b\", \"c\", \"d\")\n\nx[1]        # first element\n\n[1] \"a\"\n\nx[2:4]      # range\n\n[1] \"b\" \"c\" \"d\"\n\nx[c(1,4)]   # multiple positions\n\n[1] \"a\" \"d\"\n\n\nLogical subsetting:\n\ny &lt;- 1:5\ny[y &gt; 3]\n\n[1] 4 5\n\n\nReplace values:\n\ny[y &gt; 3] &lt;- 0\ny\n\n[1] 1 2 3 0 0\n\n\n\n4.2.2 Factors\nFactors represent categorical data.\n\nnames &lt;- c(\"John\", \"Mary\", \"John\", \"Mary\")\nf &lt;- factor(names)\n\nf\n\n[1] John Mary John Mary\nLevels: John Mary\n\nlevels(f)\n\n[1] \"John\" \"Mary\"\n\ntable(f)\n\nf\nJohn Mary \n   2    2",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
@@ -303,9 +303,9 @@
   {
     "objectID": "data_structures.html#data-frames",
     "href": "data_structures.html#data-frames",
-    "title": "4  Data Structures",
-    "section": "4.3 Data Frames",
-    "text": "4.3 Data Frames\nA data frame is a 2D structure (rows × columns).\nEach column is a vector.\nColumns may have different types.\ndf &lt;- data.frame(\n  name = c(\"Ana\", \"Ben\", \"Chris\"),\n  age  = c(20, 21, 19),\n  passed = c(TRUE, TRUE, FALSE)\n)\n\nstr(df)\n\n4.3.1 Loading and Saving\nRead CSV:\ndf &lt;- read.csv(\"data.csv\")\nWrite CSV:\nwrite.csv(df, \"output.csv\", row.names = FALSE)\n\n\n4.3.2 Subsetting and Combining\nExtract column:\ndf$age\ndf[, \"age\"]\nExtract rows:\ndf[df$age &gt; 19, ]\nAdd column:\ndf$status &lt;- df$age &gt; 20\nCombine:\nrbind(df, df)\ncbind(df, new_col = 1:3)",
+    "title": "\n4  Data Structures\n",
+    "section": "\n4.3 Data Frames",
+    "text": "4.3 Data Frames\nA data frame is a 2D structure (rows × columns).\nEach column is a vector.\nColumns may have different types.\n\ndf &lt;- data.frame(\n  name = c(\"Ana\", \"Ben\", \"Chris\"),\n  age  = c(20, 21, 19),\n  passed = c(TRUE, TRUE, FALSE)\n)\n\nstr(df)\n\n'data.frame':   3 obs. of  3 variables:\n $ name  : chr  \"Ana\" \"Ben\" \"Chris\"\n $ age   : num  20 21 19\n $ passed: logi  TRUE TRUE FALSE\n\n\n\n4.3.1 Loading and Saving\nRead CSV:\ndf &lt;- read.csv(\"data.csv\")\nWrite CSV:\nwrite.csv(df, \"output.csv\", row.names = FALSE)\n\n4.3.2 Subsetting and Combining\nExtract column:\n\ndf$age\n\n[1] 20 21 19\n\ndf[, \"age\"]\n\n[1] 20 21 19\n\n\nExtract rows:\n\ndf[df$age &gt; 19, ]\n\n  name age passed\n1  Ana  20   TRUE\n2  Ben  21   TRUE\n\n\nAdd column:\n\ndf$status &lt;- df$age &gt; 20\n\nCombine:\n\nrbind(df, df)\n\n   name age passed status\n1   Ana  20   TRUE  FALSE\n2   Ben  21   TRUE   TRUE\n3 Chris  19  FALSE  FALSE\n4   Ana  20   TRUE  FALSE\n5   Ben  21   TRUE   TRUE\n6 Chris  19  FALSE  FALSE\n\ncbind(df, new_col = 1:3)\n\n   name age passed status new_col\n1   Ana  20   TRUE  FALSE       1\n2   Ben  21   TRUE   TRUE       2\n3 Chris  19  FALSE  FALSE       3",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
@@ -314,9 +314,9 @@
   {
     "objectID": "data_structures.html#matrices-and-arrays",
     "href": "data_structures.html#matrices-and-arrays",
-    "title": "4  Data Structures",
-    "section": "4.4 Matrices and Arrays",
-    "text": "4.4 Matrices and Arrays\nA matrix is a vector with dimensions.\nAll elements must be the same type.\nm &lt;- matrix(1:12, nrow = 3, ncol = 4)\n\nm[2,3]   # row 2, column 3\nm[2, ]   # row 2\nm[, 4]   # column 4\nMatrix operations:\nt(m)          # transpose\nm * m         # element-wise\nm %*% t(m)    # matrix multiplication\nAn array is a multi-dimensional matrix:\na &lt;- array(1:8, dim = c(2,2,2))",
+    "title": "\n4  Data Structures\n",
+    "section": "\n4.4 Matrices and Arrays",
+    "text": "4.4 Matrices and Arrays\nA matrix is a vector with dimensions.\nAll elements must be the same type.\n\nm &lt;- matrix(1:12, nrow = 3, ncol = 4)\n\nm[2,3]   # row 2, column 3\n\n[1] 8\n\nm[2, ]   # row 2\n\n[1]  2  5  8 11\n\nm[, 4]   # column 4\n\n[1] 10 11 12\n\n\nMatrix operations:\n\nt(m)          # transpose\n\n     [,1] [,2] [,3]\n[1,]    1    2    3\n[2,]    4    5    6\n[3,]    7    8    9\n[4,]   10   11   12\n\nm * m         # element-wise\n\n     [,1] [,2] [,3] [,4]\n[1,]    1   16   49  100\n[2,]    4   25   64  121\n[3,]    9   36   81  144\n\nm %*% t(m)    # matrix multiplication\n\n     [,1] [,2] [,3]\n[1,]  166  188  210\n[2,]  188  214  240\n[3,]  210  240  270\n\n\nAn array is a multi-dimensional matrix:\n\na &lt;- array(1:8, dim = c(2,2,2))",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
@@ -325,9 +325,9 @@
   {
     "objectID": "data_structures.html#lists",
     "href": "data_structures.html#lists",
-    "title": "4  Data Structures",
-    "section": "4.5 Lists",
-    "text": "4.5 Lists\nA list can store different types and sizes of objects.\nmy_list &lt;- list(\n  numbers = 1:3,\n  name = \"Ana\",\n  matrix = matrix(1:4, 2),\n  df = df\n)\n\nmy_list\nSubsetting lists:\nmy_list[1]      # returns sub-list\nmy_list[[1]]    # returns element\nmy_list$name",
+    "title": "\n4  Data Structures\n",
+    "section": "\n4.5 Lists",
+    "text": "4.5 Lists\nA list can store different types and sizes of objects.\n\nmy_list &lt;- list(\n  numbers = 1:3,\n  name = \"Ana\",\n  matrix = matrix(1:4, 2),\n  df = df\n)\n\nmy_list\n\n$numbers\n[1] 1 2 3\n\n$name\n[1] \"Ana\"\n\n$matrix\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n\n$df\n   name age passed status\n1   Ana  20   TRUE  FALSE\n2   Ben  21   TRUE   TRUE\n3 Chris  19  FALSE  FALSE\n\n\nSubsetting lists:\n\nmy_list[1]      # returns sub-list\n\n$numbers\n[1] 1 2 3\n\nmy_list[[1]]    # returns element\n\n[1] 1 2 3\n\nmy_list$name\n\n[1] \"Ana\"",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
@@ -336,9 +336,9 @@
   {
     "objectID": "data_structures.html#summary-when-to-use-what",
     "href": "data_structures.html#summary-when-to-use-what",
-    "title": "4  Data Structures",
-    "section": "4.6 Summary: When to Use What",
-    "text": "4.6 Summary: When to Use What\n\n\n\nStructure\nSame Type?\nDimensions\nUse Case\n\n\n\n\nVector\nYes\n1D\nSingle variable\n\n\nFactor\nYes\n1D\nCategories\n\n\nData Frame\nNo (by column)\n2D\nTabular data\n\n\nMatrix\nYes\n2D\nMath operations\n\n\nArray\nYes\n3D+\nMultidimensional data\n\n\nList\nNo\nAny\nComplex objects\n\n\n\nCore idea: Everything in R builds from vectors.",
+    "title": "\n4  Data Structures\n",
+    "section": "\n4.6 Summary: When to Use What",
+    "text": "4.6 Summary: When to Use What\n\n\nStructure\nSame Type?\nDimensions\nUse Case\n\n\n\nVector\nYes\n1D\nSingle variable\n\n\nFactor\nYes\n1D\nCategories\n\n\nData Frame\nNo (by column)\n2D\nTabular data\n\n\nMatrix\nYes\n2D\nMath operations\n\n\nArray\nYes\n3D+\nMultidimensional data\n\n\nList\nNo\nAny\nComplex objects\n\n\n\nCore idea: Everything in R builds from vectors.",
     "crumbs": [
       "Objects",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Structures</span>"
