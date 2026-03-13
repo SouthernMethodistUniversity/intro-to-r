@@ -69,7 +69,7 @@ R checks conditions from top to bottom and stops when one is TRUE.
 
 Syntax:
 
-```{r}
+```r
 ifelse(condition, value_if_true, value_if_false)
 ```
 
