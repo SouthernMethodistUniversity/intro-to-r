@@ -19,7 +19,7 @@ if (condition){
 
 Example:
 
-```r
+```{r}
 a <- 5
 
 if (a > 3){
@@ -33,7 +33,7 @@ The code inside the braces runs only if the condition is TRUE.
 
 Use `else` to define what happens when the condition is FALSE.
 
-```r
+```{r}
 a <- 5
 
 if (a > 3){
@@ -49,7 +49,7 @@ Only one block will execute.
 
 Use `else if` to test multiple conditions.
 
-```r
+```{r}
 a <- 5
 
 if (a > 3){
@@ -69,13 +69,13 @@ R checks conditions from top to bottom and stops when one is TRUE.
 
 Syntax:
 
-```r
+```{r}
 ifelse(condition, value_if_true, value_if_false)
 ```
 
 Example:
 
-```r
+```{r}
 a <- 5
 
 ifelse(a > 3,
@@ -85,7 +85,7 @@ ifelse(a > 3,
 
 Unlike `if`, `ifelse()` works well on vectors:
 
-```r
+```{r}
 x <- 1:5
 ifelse(x > 3, "big", "small")
 ```
