@@ -96,7 +96,7 @@ F2C(100)
 
 Use a list to return multiple outputs.
 
-```r
+```{r}
 sqsum <- function(a){
   sq <- a^0.5
   sumsq <- a + sq
@@ -113,7 +113,7 @@ sqsum(49)
 
 You can assign default values to arguments.
 
-```r
+```{r}
 power <- function(x, exponent = 2){
   x^exponent
 }
@@ -136,7 +136,7 @@ Goal: Compute the mean `mpg` for cars with 4 cylinders.
 
 Step-by-step approach:
 
-```r
+```{r}
 data(mtcars)
 
 ind1 <- mtcars$cyl == 4
@@ -146,13 +146,13 @@ mean(ind2)
 
 Nested version:
 
-```r
+```{r}
 mean(mtcars$mpg[mtcars$cyl == 4])
 ```
 
 You can also define functions inside functions:
 
-```r
+```{r}
 outer_function <- function(x){
   
   inner_function <- function(y){
@@ -173,7 +173,7 @@ Functions should check inputs to avoid incorrect results.
 
 ### Using `stopifnot()`
 
-```r
+```{r}
 safe_sqrt <- function(x){
   stopifnot(x >= 0)
   sqrt(x)
@@ -188,7 +188,7 @@ If the condition fails, R stops execution.
 
 ### Using `stop()`
 
-```r
+```{r}
 safe_divide <- function(a, b){
   if(b == 0){
     stop("Division by zero is not allowed.")
@@ -199,7 +199,7 @@ safe_divide <- function(a, b){
 
 ### Using `warning()`
 
-```r
+```{r}
 check_positive <- function(x){
   if(x < 0){
     warning("Negative value detected.")
